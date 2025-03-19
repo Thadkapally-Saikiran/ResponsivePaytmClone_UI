@@ -4,68 +4,68 @@
 
 /* Generic navbar link styling */
 .navbar-nav .nav-link {
-  font-weight: 500; /* Set medium font weight for navigation links */
-  color: #000; /* Default link color set to black */
+  font-weight: 500;
+  color: #000; /* Default link color */
 }
 
 /* Paytm Logo constraints */
 .navbar-brand img {
-  max-height: 25px; /* Limit logo image height to 25px */
+  max-height: 25px;
 }
 
 /* ===========================
    Download App Link Styling
    =========================== */
 .download-link {
-  color: #002970 !important; /* Set link color to blue and override any conflicting styles */
-  font-weight: 500; /* Medium font weight for the download link */
-  text-decoration: none; /* Remove underline from link */
-  display: inline-flex; /* Use inline-flex to align child elements inline */
-  align-items: center; /* Vertically center the contents */
-  gap: 5px; /* Space out child elements by 5px */
+  color: #002970 !important;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .download-link:hover {
-  color: #001f50 !important; /* Darken link color on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+  color: #001f50 !important;
+  text-decoration: none;
 }
 .download-link i {
-  font-size: 14px; /* Set icon size inside the download link to 14px */
+  font-size: 14px;
 }
 
 /* ===========================
    Sign In Button Styling
    =========================== */
 .sign-in-btn {
-  background-color: #002970; /* Blue background for the sign in button */
-  border-radius: 50px; /* Rounded corners to create a pill shape */
-  padding: 5px 15px; /* Padding for comfortable spacing inside the button */
-  color: #fff; /* White text color */
-  font-weight: 500; /* Medium font weight */
-  text-decoration: none; /* Remove underline */
-  border: none; /* No border styling */
-  display: inline-flex; /* Inline flex layout for aligning icon and text */
-  align-items: center; /* Vertically center items within the button */
-  gap: 8px; /* Space out child elements by 8px */
+  background-color: #002970;
+  border-radius: 50px; /* Pill shape */
+  padding: 5px 15px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .sign-in-btn:hover {
-  background-color: #001f50; /* Darker blue on hover */
-  color: #fff; /* Maintain white text on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+  background-color: #001f50;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Circle portion on the left with user icon */
 .icon-circle {
-  width: 28px; /* Fixed width for circle container */
-  height: 28px; /* Fixed height for circle container */
-  border-radius: 50%; /* Fully rounded to form a circle */
-  background-color: #00aef0; /* Light blue background color */
-  display: flex; /* Use flexbox to center the icon */
-  align-items: center; /* Vertically center the icon */
-  justify-content: center; /* Horizontally center the icon */
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #00aef0; /* Light blue portion */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-circle i {
-  color: #fff; /* Icon color set to white */
-  font-size: 14px; /* Icon font size set to 14px */
+  color: #fff;
+  font-size: 14px;
 }
 
 /* ===========================
@@ -75,35 +75,35 @@
 /* Mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
   .navbar-brand img {
-    max-height: 20px; /* Reduce logo size for mobile devices */
+    max-height: 20px;
   }
   .navbar-nav .nav-link {
-    font-size: 14px; /* Smaller font size for nav links on mobile */
+    font-size: 14px;
   }
   .sign-in-btn {
-    padding: 4px 10px; /* Adjust padding for sign in button on mobile */
-    font-size: 12px; /* Smaller font size for sign in text on mobile */
+    padding: 4px 10px;
+    font-size: 12px;
   }
   .icon-circle {
-    width: 24px; /* Reduce circle width for mobile */
-    height: 24px; /* Reduce circle height for mobile */
+    width: 24px;
+    height: 24px;
   }
 }
 
 /* Tablets (min-width: 577px) and (max-width: 991px) */
 @media (min-width: 577px) and (max-width: 991px) {
   .navbar-brand img {
-    max-height: 23px; /* Set logo size suitable for tablets */
+    max-height: 23px;
   }
   .navbar-nav .nav-link {
-    font-size: 15px; /* Set a slightly larger font size for tablets */
+    font-size: 15px;
   }
   .sign-in-btn {
-    padding: 5px 12px; /* Adjust padding for sign in button on tablets */
-    font-size: 14px; /* Maintain a readable font size on tablets */
+    padding: 5px 12px;
+    font-size: 14px;
   }
   .icon-circle {
-    width: 26px; /* Adjust circle size for tablets */
+    width: 26px;
     height: 26px;
   }
 }
@@ -114,259 +114,259 @@
 
 /* Global resets and font */
 * {
-  margin: 0; /* Remove default margin from all elements */
-  padding: 0; /* Remove default padding from all elements */
-  box-sizing: border-box; /* Use border-box model for consistent sizing */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  font-family: 'Inter', sans-serif; /* Set default font to Inter with a sans-serif fallback */
-  font-size: 14px; /* Base font size for the body */
-  color: #000; /* Default text color set to black */
-  background-color: #e8f8fd; /* Light blue background color for the page */
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #e8f8fd; /* Light blue background */
 }
 a {
-  text-decoration: none; /* Remove default underline from all links */
-  color: inherit; /* Inherit text color from parent element */
+  text-decoration: none;
+  color: inherit;
 }
 img {
-  display: inline-block; /* Ensure images behave as inline-block elements */
+  display: inline-block;
 }
 
 /* Page Wrapper */
 .page-wrapper {
-  width: 1160px; /* Fixed width for main page content */
-  margin: 0 auto; /* Center the page wrapper horizontally */
-  padding: 16px 0; /* Vertical padding for spacing */
+  width: 1160px;
+  margin: 0 auto;
+  padding: 16px 0;
 }
 
 /****************************************************
  * Top Navigation (Flights | Bus | Trains | Intl...) 
  ****************************************************/
 .top-nav {
-  display: flex; /* Use flexbox layout for top navigation */
-  align-items: center; /* Vertically center navigation items */
-  justify-content: space-between; /* Space out items evenly between start and end */
-  margin-bottom: 16px; /* Margin below the top navigation for spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 .top-nav nav {
-  display: flex; /* Use flexbox for nav links */
-  gap: 24px; /* Set a gap of 24px between each navigation link */
+  display: flex;
+  gap: 24px;
 }
 .top-nav nav a {
-  display: flex; /* Display nav links as flex containers */
-  align-items: center; /* Vertically center the content within nav links */
-  gap: 6px; /* Small gap between icon and text within links */
-  font-weight: 500; /* Medium font weight for nav links */
-  color: #000; /* Set nav link color to black */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #000;
 }
 .top-nav nav a:hover {
-  opacity: 0.8; /* Slight opacity reduction on hover for effect */
+  opacity: 0.8;
 }
 .logo-container img {
-  height: 30px; /* Set fixed height for logo image in the navigation */
+  height: 30px;
 }
 
 /****************************************************
  * Flight Search Section
  ****************************************************/
 .flight-search-section {
-  background-color: #fff; /* White background for the flight search area */
-  border-radius: 8px; /* Rounded corners with an 8px radius */
-  padding: 16px; /* Padding inside the flight search section */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
 }
 
 /* Journey Type (One Way / Round Trip) */
 .journey-type {
-  display: flex; /* Use flexbox to layout journey type options */
-  gap: 24px; /* Space between each option */
-  margin-bottom: 16px; /* Space below the journey type section */
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
 }
 .journey-type label {
-  display: flex; /* Display each label as a flex container */
-  align-items: center; /* Center items vertically in the label */
-  gap: 4px; /* Small gap between the radio input and its text */
-  font-size: 14px; /* Font size for label text */
-  font-weight: 500; /* Medium font weight */
-  cursor: pointer; /* Cursor changes to pointer on hover */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 .journey-type input[type="radio"] {
-  cursor: pointer; /* Ensure radio buttons show pointer cursor */
+  cursor: pointer;
 }
 
 /* Travel Details Row (From, To, Depart, Return, etc.) */
 .travel-details {
-  display: flex; /* Use flexbox to align travel detail sections */
-  align-items: center; /* Vertically center the details */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 24px; /* Gap between different travel detail boxes */
-  margin-bottom: 16px; /* Bottom margin for spacing */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 16px;
 }
 .location-box,
 .date-box,
 .traveller-class {
-  display: flex; /* Use flex layout for each detail box */
-  flex-direction: column; /* Stack label and value vertically */
+  display: flex;
+  flex-direction: column;
 }
 .label {
-  font-size: 12px; /* Smaller font size for detail labels */
-  color: #666; /* Set label color to gray */
-  margin-bottom: 4px; /* Margin below label for spacing */
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
 }
 .value {
-  font-size: 14px; /* Set font size for detail values */
-  font-weight: 500; /* Medium font weight for values */
+  font-size: 14px;
+  font-weight: 500;
 }
 .arrow-icon {
-  width: 24px; /* Fixed width for arrow icon */
-  height: 24px; /* Fixed height for arrow icon */
+  width: 24px;
+  height: 24px;
 }
 
 .return-box .add-return {
-  color: #0d8dcf; /* Set text color for "Add Return" option to blue */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  color: #0d8dcf;
+  cursor: pointer;
 }
 
 /* Search Button */
 .search-button {
-  margin-left: auto; /* Push the search button to the right end of its container */
-  background-color: #00baf2; /* Bright blue background color */
-  color: #fff; /* White text color */
-  border: none; /* No border for a clean look */
-  border-radius: 4px; /* Slightly rounded corners */
-  padding: 10px 20px; /* Padding for comfortable button size */
-  font-size: 14px; /* Font size for button text */
-  font-weight: 500; /* Medium font weight */
-  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: auto; /* pushes the button to the right end if space allows */
+  background-color: #00baf2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 .search-button:hover {
-  background-color: #009bd1; /* Darker blue when hovered */
+  background-color: #009bd1;
 }
 
 /****************************************************
  * Special Fares
  ****************************************************/
 .special-fares {
-  border-top: 1px solid #eee; /* Light gray top border to separate special fares */
-  padding-top: 16px; /* Padding above the special fares section */
+  border-top: 1px solid #eee;
+  padding-top: 16px;
 }
 .special-fares .title {
-  display: flex; /* Use flexbox to align title content */
-  align-items: center; /* Vertically center the title elements */
-  gap: 16px; /* Gap between title elements */
-  font-weight: 500; /* Medium font weight for title */
-  margin-bottom: 12px; /* Margin below the title for spacing */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 .special-fares .title .extra-savings {
-  display: flex; /* Flex layout for extra savings info */
-  align-items: center; /* Center items vertically */
-  gap: 6px; /* Gap between icon and text */
-  font-size: 14px; /* Font size for extra savings text */
-  color: #00a950; /* Greenish color for extra savings text */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #00a950; /* A greenish shade for "Extra Savings" */
 }
 .special-fares .fare-options {
-  display: flex; /* Flexbox layout for arranging fare options */
-  gap: 24px; /* Gap between each fare option */
+  display: flex;
+  gap: 24px;
 }
 .fare-option {
-  display: flex; /* Use flexbox for individual fare option layout */
-  flex-direction: column; /* Stack option title and subtitle vertically */
-  background-color: #f7f9fc; /* Light background color for fare option */
-  border-radius: 4px; /* Rounded corners for fare option */
-  padding: 8px 12px; /* Padding for spacing inside fare option */
-  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 .fare-option:hover {
-  background-color: #eef2f6; /* Change background on hover for visual feedback */
+  background-color: #eef2f6;
 }
 .option-title {
-  font-weight: 500; /* Medium font weight for fare option title */
-  margin-bottom: 4px; /* Margin below title for spacing */
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 .option-subtitle {
-  font-size: 12px; /* Smaller font size for fare option subtitle */
-  color: #666; /* Gray color for subtitle text */
+  font-size: 12px;
+  color: #666;
 }
 
 /****************************************************
  * LAST SECTION LAYOUT & ALIGNMENT
  ****************************************************/
 .container-2 {
-  max-width: 1200px;          /* Set maximum width of container to 1200px */
-  margin: 0 auto;             /* Center container horizontally */
-  display: flex;              /* Use flexbox for layout */
-  flex-wrap: wrap;            /* Allow content to wrap on smaller screens */
-  align-items: center;        /* Vertically center container items */
-  justify-content: space-between; /* Distribute space evenly between items */
-  padding: 2rem 1rem;         /* Padding around container: 2rem top/bottom, 1rem left/right */
+  max-width: 1200px;          /* Adjust container width as desired */
+  margin: 0 auto;             /* Center horizontally */
+  display: flex;
+  flex-wrap: wrap;            /* Wrap on small screens */
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;         /* Spacing around the section */
 }
 
 .left-side,
 .right-side {
-  flex: 1 1 500px;            /* Each side can grow/shrink with a base width of 500px */
-  min-width: 300px;           /* Minimum width to ensure content readability */
-  padding: 1rem;              /* Padding inside each side for spacing */
+  flex: 1 1 500px;            /* Each side takes roughly half the container */
+  min-width: 300px;           /* Prevents boxes from becoming too narrow */
+  padding: 1rem;
 }
 
 .left-side {
-  display: flex;              /* Use flexbox for left-side content */
-  justify-content: center;    /* Center content horizontally */
-  align-items: center;        /* Center content vertically */
-  text-align: center;         /* Center text inside left-side */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;         /* Ensures image is centered */
 }
 
 .interface-img {
-  max-width: 100%;            /* Ensure image does not exceed its container's width */
-  height: auto;               /* Maintain aspect ratio of the image */
+  max-width: 100%;            /* Make the image responsive */
+  height: auto;
 }
 
 .right-side {
-  display: flex;              /* Use flexbox for right-side layout */
-  align-items: center;        /* Vertically center right-side content */
-  justify-content: center;    /* Horizontally center right-side content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paytm-money-info {
-  max-width: 450px;           /* Constrain info section width to 450px for readability */
-  text-align: left;           /* Align text to the left */
+  max-width: 450px;           /* Constrain text content width */
+  text-align: left;
 }
 
 .paytm-money-info .logo img {
-  max-width: 150px;           /* Limit logo image width */
-  height: auto;               /* Maintain aspect ratio */
-  margin-bottom: 20px;        /* Space below logo for separation */
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .paytm-money-info .heading {
-  font-size: 2rem;            /* Set heading font size */
-  font-weight: 600;           /* Semibold heading */
-  margin-bottom: 15px;        /* Space below heading */
-  line-height: 1.2;           /* Set line-height for better readability */
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .paytm-money-info .description {
-  font-size: 1rem;            /* Standard font size for description text */
-  color: #555;                /* Set description color to a medium gray */
-  margin-bottom: 20px;        /* Space below description */
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .paytm-money-info .learn-more-button a {
-  display: inline-block;      /* Display link as inline-block to allow padding */
-  background-color: #00a950;   /* Green background for learn more button */
-  color: #fff;                /* White text color */
-  padding: 10px 20px;         /* Padding for button-like appearance */
-  border-radius: 4px;         /* Rounded corners */
-  font-weight: 600;           /* Semibold text */
-  text-decoration: none;      /* Remove default underline */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-block;
+  background-color: #00a950;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .paytm-money-info .learn-more-button a:hover {
-  background-color: #008f3e;  /* Darker green on hover */
+  background-color: #008f3e;
 }
 
 /* FORCE WHITE BACKGROUND FOR LAST SECTION */
 section.py-3 {
-  background-color: #fff !important; /* Override background color to white for sections with py-3 class */
+  background-color: #fff !important;
 }
 
 /****************************************************
@@ -376,113 +376,113 @@ section.py-3 {
 /* Mobile Devices (max-width: 576px) */
 @media (max-width: 576px) {
   body {
-    font-size: 12px; /* Smaller base font size for mobile */
+    font-size: 12px;
   }
   
   .page-wrapper {
-    width: 100%; /* Full width for page wrapper on mobile */
-    padding: 8px 0; /* Reduced vertical padding */
+    width: 100%;
+    padding: 8px 0;
   }
   
   .navbar-nav .nav-link {
-    font-size: 12px; /* Smaller font size for navigation links on mobile */
+    font-size: 12px;
   }
   
   .container-2 {
-    flex-direction: column; /* Stack container items vertically on mobile */
-    padding: 1rem; /* Reduced padding for mobile layout */
+    flex-direction: column;
+    padding: 1rem;
   }
   
   .left-side,
   .right-side {
-    flex: 1 1 100%; /* Each side occupies full width on mobile */
-    max-width: 100%; /* Ensure sides do not exceed container width */
-    padding: 0.5rem; /* Reduced internal padding */
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0.5rem;
   }
   
   .paytm-money-info .heading {
-    font-size: 1.5rem; /* Smaller heading for mobile */
+    font-size: 1.5rem;
   }
   
   .paytm-money-info .description {
-    font-size: 0.9rem; /* Slightly smaller description text for mobile */
+    font-size: 0.9rem;
   }
   
   .paytm-money-info .learn-more-button a {
-    padding: 8px 16px; /* Reduced padding for learn more button on mobile */
-    font-size: 0.9rem; /* Smaller font size for button text on mobile */
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
 /* Tablet Devices (min-width: 577px) and (max-width: 991px) */
 @media (min-width: 577px) and (max-width: 991px) {
   body {
-    font-size: 13px; /* Slightly larger base font size for tablets */
+    font-size: 13px;
   }
   
   .page-wrapper {
-    width: 90%; /* Page wrapper takes 90% of screen width on tablets */
-    padding: 12px 0; /* Adjusted vertical padding */
+    width: 90%;
+    padding: 12px 0;
   }
   
   .navbar-brand img {
-    max-height: 23px; /* Adjust logo size for tablet view */
+    max-height: 23px;
   }
   
   .navbar-nav .nav-link {
-    font-size: 14px; /* Set nav link font size for tablets */
+    font-size: 14px;
   }
   
   .container-2 {
-    flex-direction: row; /* Maintain row layout on tablets */
-    align-items: center; /* Vertically center container items */
-    justify-content: center; /* Center items horizontally */
-    padding: 1.5rem 1rem; /* Adjust padding for tablet layout */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
   }
   
   .left-side,
   .right-side {
-    flex: 1 1 45%; /* Each side occupies roughly 45% of the container */
-    max-width: 45%; /* Constrain maximum width for each side */
-    padding: 1rem; /* Standard padding for tablets */
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 1rem;
   }
   
   .paytm-money-info .heading {
-    font-size: 1.75rem; /* Slightly smaller heading for tablets */
+    font-size: 1.75rem;
   }
   
   .paytm-money-info .description {
-    font-size: 0.95rem; /* Adjust description font size for tablets */
+    font-size: 0.95rem;
   }
 }
 
 /* Desktop Devices (min-width: 992px) */
 @media (min-width: 992px) {
   body {
-    font-size: 14px; /* Base font size for desktop devices */
+    font-size: 14px;
   }
   
   .page-wrapper {
-    width: 1160px; /* Fixed width for page wrapper on desktop */
+    width: 1160px;
   }
   
   .container-2 {
-    flex-direction: row; /* Row layout for container on desktop */
-    padding: 2rem 1rem; /* Standard padding for desktop layout */
+    flex-direction: row;
+    padding: 2rem 1rem;
   }
   
   .left-side,
   .right-side {
-    flex: 1 1 500px; /* Each side takes roughly 500px width on desktop */
-    max-width: 500px; /* Constrain maximum width for desktop layout */
-    padding: 1rem; /* Standard padding for desktop */
+    flex: 1 1 500px;
+    max-width: 500px;
+    padding: 1rem;
   }
   
   .paytm-money-info .heading {
-    font-size: 2rem; /* Larger heading for desktop view */
+    font-size: 2rem;
   }
   
   .paytm-money-info .description {
-    font-size: 1rem; /* Standard description font size for desktop */
+    font-size: 1rem;
   }
 }
