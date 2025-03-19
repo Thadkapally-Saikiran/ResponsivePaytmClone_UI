@@ -1,13 +1,10 @@
 /* =========================================
    ORIGINAL CSS
    ========================================= */
-// ──────────────────────────────────────────────
-// This header block (using a CSS comment) marks the start of the original CSS section.
-// It visually separates and labels the code that follows as the original set of styles.
+
 
 /* Generic navbar link styling */
-// ──────────────────────────────────────────────
-// This comment indicates that the following rules apply to generic navigation bar links.
+
 
 .navbar-nav .nav-link {
   /* Selects any element with the class "nav-link" that is a descendant of an element with class "navbar-nav". */
@@ -18,8 +15,7 @@
 }
 
 /* Paytm Logo constraints */
-// ──────────────────────────────────────────────
-// This comment denotes that the following styles apply specifically to the Paytm logo image.
+
 
 .navbar-brand img {
   /* Targets any <img> element that is a descendant of an element with the class "navbar-brand". */
@@ -30,8 +26,7 @@
 /* ===========================
    Download App Link Styling
    =========================== */
-// ──────────────────────────────────────────────
-// This block comment indicates that the next styles are for the "Download App" link appearance.
+
 
 .download-link {
   /* Targets any element with the class "download-link". */
@@ -64,8 +59,7 @@
 /* ===========================
    Sign In Button Styling
    =========================== */
-// ──────────────────────────────────────────────
-// This comment block marks the section that styles the "Sign In" button.
+
 
 .sign-in-btn {
   /* Selects any element with the class "sign-in-btn". */
@@ -101,8 +95,7 @@
 }
 
 /* Circle portion on the left with user icon */
-// ──────────────────────────────────────────────
-// This comment explains that the following styles are for a circular container (likely for an icon) on the left side of a component.
+
 
 .icon-circle {
   /* Selects any element with the class "icon-circle". */
@@ -132,12 +125,9 @@
 /* ===========================
    Media Queries for Navbar Responsiveness
    =========================== */
-// ──────────────────────────────────────────────
-// This section introduces media queries to adjust navbar styles for different screen sizes (responsiveness).
+
 
 /* Mobile devices (max-width: 576px) */
-// ──────────────────────────────────────────────
-// The following media query applies styles specifically when the viewport width is 576px or less (mobile devices).
 
 @media (max-width: 576px) {
   .navbar-brand img {
@@ -167,8 +157,6 @@
 }
 
 /* Tablets (min-width: 577px) and (max-width: 991px) */
-// ──────────────────────────────────────────────
-// This media query targets devices with widths between 577px and 991px (tablet devices).
 
 @media (min-width: 577px) and (max-width: 991px) {
   .navbar-brand img {
@@ -200,12 +188,9 @@
 /* =========================================
    NEW CSS (Appended)
    ========================================= */
-// ──────────────────────────────────────────────
-// This header indicates the beginning of a new set of CSS rules that are appended after the original CSS.
+
 
 /* Global resets and font */
-// ──────────────────────────────────────────────
-// The following styles serve as a global reset and define base font settings.
 
 * {
   /* The universal selector (*) targets every element on the page. */
@@ -241,8 +226,6 @@ img {
 }
 
 /* Page Wrapper */
-// ──────────────────────────────────────────────
-// This section defines a wrapper class for page content to control width, alignment, and spacing.
 
 .page-wrapper {
   /* Targets any element with the class "page-wrapper". */
@@ -257,8 +240,6 @@ img {
 /****************************************************
  * Top Navigation (Flights | Bus | Trains | Intl...) 
  ****************************************************/
-// ──────────────────────────────────────────────
-// This comment block introduces styles for the top navigation bar, which may include links for Flights, Bus, Trains, International travel, etc.
 
 .top-nav {
   /* Targets the element with the class "top-nav". */
@@ -305,8 +286,6 @@ img {
 /****************************************************
  * Flight Search Section
  ****************************************************/
-// ──────────────────────────────────────────────
-// This section introduces styles for the flight search area of the website.
 
 .flight-search-section {
   /* Targets the element with the class "flight-search-section". */
@@ -319,8 +298,6 @@ img {
 }
 
 /* Journey Type (One Way / Round Trip) */
-// ──────────────────────────────────────────────
-// This comment indicates that the following styles are for selecting the journey type, such as One Way or Round Trip.
 
 .journey-type {
   /* Targets the element with the class "journey-type". */
@@ -353,8 +330,6 @@ img {
 }
 
 /* Travel Details Row (From, To, Depart, Return, etc.) */
-// ──────────────────────────────────────────────
-// This section defines the layout for travel details inputs such as origin, destination, departure date, and return date.
 
 .travel-details {
   /* Targets the element with the class "travel-details". */
@@ -411,8 +386,6 @@ img {
 }
 
 /* Search Button */
-// ──────────────────────────────────────────────
-// This section styles the search button used in the flight search section.
 
 .search-button {
   /* Targets any element with the class "search-button". */
@@ -444,8 +417,6 @@ img {
 /****************************************************
  * Special Fares
  ****************************************************/
-// ──────────────────────────────────────────────
-// This section styles a “Special Fares” section, likely used to highlight discounted or promotional offers.
 
 .special-fares {
   /* Targets any element with the class "special-fares". */
@@ -525,8 +496,6 @@ img {
 /****************************************************
  * LAST SECTION LAYOUT & ALIGNMENT
  ****************************************************/
-// ──────────────────────────────────────────────
-// This section sets up the layout and alignment for the last section of the page, likely a feature or info block.
 
 .container-2 {
   /* Targets any element with the class "container-2". */
@@ -654,8 +623,6 @@ img {
 }
 
 /* FORCE WHITE BACKGROUND FOR LAST SECTION */
-// ──────────────────────────────────────────────
-// This style rule forces a white background for any section that has both a <section> element and the class "py-3", overriding other background settings.
 
 section.py-3 {
   /* Targets <section> elements with the class "py-3". */
@@ -666,12 +633,8 @@ section.py-3 {
 /****************************************************
  * RESPONSIVE MEDIA QUERIES
  ****************************************************/
-// ──────────────────────────────────────────────
-// This section contains additional media queries to ensure the layout adjusts properly for different screen sizes (mobile, tablet, desktop).
 
 /* Mobile Devices (max-width: 576px) */
-// ──────────────────────────────────────────────
-// Applies styles for devices with a maximum width of 576px (mobile screens).
 
 @media (max-width: 576px) {
   body {
@@ -735,8 +698,6 @@ section.py-3 {
 }
 
 /* Tablet Devices (min-width: 577px) and (max-width: 991px) */
-// ──────────────────────────────────────────────
-// Applies styles for tablet devices with widths between 577px and 991px.
 
 @media (min-width: 577px) and (max-width: 991px) {
   body {
@@ -802,9 +763,6 @@ section.py-3 {
 }
 
 /* Desktop Devices (min-width: 992px) */
-// ──────────────────────────────────────────────
-// Applies styles for desktop devices with a viewport width of at least 992px.
-
 @media (min-width: 992px) {
   body {
     /* Targets the <body> element for desktop screens. */
