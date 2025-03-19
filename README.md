@@ -1,5 +1,7 @@
 # Paytm Clone UI 🚀
 
+![](paytm.png)
+
 A responsive, static web interface inspired by Paytm's design. Built using HTML, CSS, JavaScript, and Bootstrap, this project demonstrates modern, mobile-friendly UI techniques with clean, modular code.
 
 ---
