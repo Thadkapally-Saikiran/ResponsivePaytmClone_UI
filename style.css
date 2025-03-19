@@ -1,488 +1,851 @@
 /* =========================================
    ORIGINAL CSS
    ========================================= */
+// ──────────────────────────────────────────────
+// This header block (using a CSS comment) marks the start of the original CSS section.
+// It visually separates and labels the code that follows as the original set of styles.
 
 /* Generic navbar link styling */
+// ──────────────────────────────────────────────
+// This comment indicates that the following rules apply to generic navigation bar links.
+
 .navbar-nav .nav-link {
+  /* Selects any element with the class "nav-link" that is a descendant of an element with class "navbar-nav". */
   font-weight: 500;
+  /* Sets the font weight to 500 (medium) for better readability and emphasis on navbar links. */
   color: #000; /* Default link color */
+  /* Applies a default black color (#000) to the text of the navbar links. The inline comment explains that this is the default link color. */
 }
 
 /* Paytm Logo constraints */
+// ──────────────────────────────────────────────
+// This comment denotes that the following styles apply specifically to the Paytm logo image.
+
 .navbar-brand img {
+  /* Targets any <img> element that is a descendant of an element with the class "navbar-brand". */
   max-height: 25px;
+  /* Limits the maximum height of the logo image to 25 pixels to maintain design consistency. */
 }
 
 /* ===========================
    Download App Link Styling
    =========================== */
+// ──────────────────────────────────────────────
+// This block comment indicates that the next styles are for the "Download App" link appearance.
+
 .download-link {
+  /* Targets any element with the class "download-link". */
   color: #002970 !important;
+  /* Sets the text color to a specific shade of blue (#002970) and uses !important to override other styles. */
   font-weight: 500;
+  /* Applies a medium font weight (500) to the download link text. */
   text-decoration: none;
+  /* Removes any default text decoration (like underline) from the link. */
   display: inline-flex;
+  /* Uses inline-flex to allow the element to behave like an inline element while still having flex container properties. */
   align-items: center;
+  /* Vertically centers any child elements within the flex container. */
   gap: 5px;
+  /* Adds a 5px gap between child elements for spacing. */
 }
 .download-link:hover {
+  /* Targets the state when the mouse pointer hovers over elements with class "download-link". */
   color: #001f50 !important;
+  /* Changes the text color to a darker blue (#001f50) on hover, with !important to enforce the style. */
   text-decoration: none;
+  /* Ensures that no text decoration appears even when hovered. */
 }
 .download-link i {
+  /* Targets any <i> element (typically used for icons) that is a descendant of an element with class "download-link". */
   font-size: 14px;
+  /* Sets the icon font size to 14 pixels for consistency with the text size. */
 }
 
 /* ===========================
    Sign In Button Styling
    =========================== */
+// ──────────────────────────────────────────────
+// This comment block marks the section that styles the "Sign In" button.
+
 .sign-in-btn {
+  /* Selects any element with the class "sign-in-btn". */
   background-color: #002970;
+  /* Sets the background color of the button to blue (#002970). */
   border-radius: 50px; /* Pill shape */
+  /* Rounds the button’s corners with a 50px radius, giving it a pill-shaped appearance. */
   padding: 5px 15px;
+  /* Applies vertical padding of 5px and horizontal padding of 15px for spacing inside the button. */
   color: #fff;
+  /* Sets the text color to white (#fff) to contrast with the blue background. */
   font-weight: 500;
+  /* Uses a medium font weight (500) to make the button text slightly bolder. */
   text-decoration: none;
+  /* Removes any default text decoration such as underlines from the button text. */
   border: none;
+  /* Removes any default border styling from the button. */
   display: inline-flex;
+  /* Uses inline-flex so the button can align its internal content using flexbox, while behaving like an inline element. */
   align-items: center;
+  /* Centers the button's internal elements vertically. */
   gap: 8px;
+  /* Sets an 8px gap between any child elements (such as an icon and text) within the button. */
 }
 .sign-in-btn:hover {
+  /* Targets the hover state for elements with the class "sign-in-btn". */
   background-color: #001f50;
+  /* Darkens the button's background color to #001f50 when hovered, providing visual feedback. */
   color: #fff;
+  /* Ensures the text color remains white on hover. */
   text-decoration: none;
+  /* Keeps text decoration removed on hover. */
 }
 
 /* Circle portion on the left with user icon */
+// ──────────────────────────────────────────────
+// This comment explains that the following styles are for a circular container (likely for an icon) on the left side of a component.
+
 .icon-circle {
+  /* Selects any element with the class "icon-circle". */
   width: 28px;
+  /* Sets the width of the circle container to 28 pixels. */
   height: 28px;
+  /* Sets the height of the circle container to 28 pixels, making it a square. */
   border-radius: 50%;
+  /* Rounds the square into a perfect circle by setting the border-radius to 50%. */
   background-color: #00aef0; /* Light blue portion */
+  /* Applies a light blue background (#00aef0) to the circle, with an inline note indicating the color’s purpose. */
   display: flex;
+  /* Uses flexbox layout to easily center any child content inside the circle. */
   align-items: center;
+  /* Vertically centers the child elements inside the flex container. */
   justify-content: center;
+  /* Horizontally centers the child elements inside the flex container. */
 }
 .icon-circle i {
+  /* Targets any <i> element (often used for icons) that is a descendant of an element with the class "icon-circle". */
   color: #fff;
+  /* Sets the icon’s color to white to contrast with the blue background of the circle. */
   font-size: 14px;
+  /* Specifies a font size of 14px for the icon to maintain consistency with surrounding text sizes. */
 }
 
 /* ===========================
    Media Queries for Navbar Responsiveness
    =========================== */
+// ──────────────────────────────────────────────
+// This section introduces media queries to adjust navbar styles for different screen sizes (responsiveness).
 
 /* Mobile devices (max-width: 576px) */
+// ──────────────────────────────────────────────
+// The following media query applies styles specifically when the viewport width is 576px or less (mobile devices).
+
 @media (max-width: 576px) {
   .navbar-brand img {
+    /* Targets the logo image inside .navbar-brand when on mobile devices. */
     max-height: 20px;
+    /* Reduces the maximum height of the logo image to 20px for better fit on smaller screens. */
   }
   .navbar-nav .nav-link {
+    /* Targets navbar links on mobile devices. */
     font-size: 14px;
+    /* Decreases the font size to 14px to ensure readability and proper spacing on smaller screens. */
   }
   .sign-in-btn {
+    /* Targets the sign in button when on mobile devices. */
     padding: 4px 10px;
+    /* Reduces the padding to 4px vertically and 10px horizontally to better fit smaller screens. */
     font-size: 12px;
+    /* Decreases the font size to 12px to suit the mobile layout. */
   }
   .icon-circle {
+    /* Adjusts the circular icon container on mobile devices. */
     width: 24px;
+    /* Reduces the width to 24px to keep proportions on a small screen. */
     height: 24px;
+    /* Reduces the height to 24px, maintaining the circular shape. */
   }
 }
 
 /* Tablets (min-width: 577px) and (max-width: 991px) */
+// ──────────────────────────────────────────────
+// This media query targets devices with widths between 577px and 991px (tablet devices).
+
 @media (min-width: 577px) and (max-width: 991px) {
   .navbar-brand img {
+    /* Targets the logo image inside .navbar-brand for tablet devices. */
     max-height: 23px;
+    /* Sets the maximum height to 23px, which is between the mobile and desktop sizes. */
   }
   .navbar-nav .nav-link {
+    /* Targets the navbar links on tablets. */
     font-size: 15px;
+    /* Adjusts the font size to 15px to ensure legibility on medium-sized screens. */
   }
   .sign-in-btn {
+    /* Targets the sign in button on tablet devices. */
     padding: 5px 12px;
+    /* Sets the padding to 5px top/bottom and 12px left/right for a balanced appearance on tablets. */
     font-size: 14px;
+    /* Uses a 14px font size for optimal readability on tablet screens. */
   }
   .icon-circle {
+    /* Targets the circular icon container for tablets. */
     width: 26px;
+    /* Sets the width to 26px, a size between mobile and desktop dimensions. */
     height: 26px;
+    /* Sets the height to 26px to maintain the circle shape. */
   }
 }
 
 /* =========================================
    NEW CSS (Appended)
    ========================================= */
+// ──────────────────────────────────────────────
+// This header indicates the beginning of a new set of CSS rules that are appended after the original CSS.
 
 /* Global resets and font */
+// ──────────────────────────────────────────────
+// The following styles serve as a global reset and define base font settings.
+
 * {
+  /* The universal selector (*) targets every element on the page. */
   margin: 0;
+  /* Resets the default margin for all elements to 0. */
   padding: 0;
+  /* Resets the default padding for all elements to 0. */
   box-sizing: border-box;
+  /* Sets the box-sizing model to border-box, ensuring that padding and border are included in the element’s total width and height. */
 }
 body {
+  /* Targets the <body> element, setting global typographic and color styles. */
   font-family: 'Inter', sans-serif;
+  /* Sets the default font to "Inter", with sans-serif as a fallback. */
   font-size: 14px;
+  /* Establishes a base font size of 14px for the document. */
   color: #000;
+  /* Sets the default text color to black (#000). */
   background-color: #e8f8fd; /* Light blue background */
+  /* Applies a light blue background color (#e8f8fd) to the entire page; the inline comment indicates the color’s purpose. */
 }
 a {
+  /* Targets all <a> (anchor) elements. */
   text-decoration: none;
+  /* Removes the default underline decoration from links. */
   color: inherit;
+  /* Instructs links to inherit the color of their parent element instead of having a default link color. */
 }
 img {
+  /* Targets all <img> elements. */
   display: inline-block;
+  /* Changes the display property to inline-block, which respects width and height settings while still flowing inline. */
 }
 
 /* Page Wrapper */
+// ──────────────────────────────────────────────
+// This section defines a wrapper class for page content to control width, alignment, and spacing.
+
 .page-wrapper {
+  /* Targets any element with the class "page-wrapper". */
   width: 1160px;
+  /* Sets a fixed width of 1160px for the content area. */
   margin: 0 auto;
+  /* Centers the wrapper horizontally by applying automatic left and right margins. */
   padding: 16px 0;
+  /* Adds 16px padding to the top and bottom to create vertical spacing. */
 }
 
 /****************************************************
  * Top Navigation (Flights | Bus | Trains | Intl...) 
  ****************************************************/
+// ──────────────────────────────────────────────
+// This comment block introduces styles for the top navigation bar, which may include links for Flights, Bus, Trains, International travel, etc.
+
 .top-nav {
+  /* Targets the element with the class "top-nav". */
   display: flex;
+  /* Uses flexbox to layout child elements horizontally. */
   align-items: center;
+  /* Vertically centers items within the top navigation. */
   justify-content: space-between;
+  /* Distributes space between items, placing the first item at the start and the last item at the end. */
   margin-bottom: 16px;
+  /* Adds a 16px bottom margin to create spacing below the navigation bar. */
 }
 .top-nav nav {
+  /* Targets any <nav> element inside an element with class "top-nav". */
   display: flex;
+  /* Uses flexbox for horizontal alignment of navigation links. */
   gap: 24px;
+  /* Sets a 24px gap between each navigation link for proper spacing. */
 }
 .top-nav nav a {
+  /* Targets all <a> elements inside the <nav> within the top navigation. */
   display: flex;
+  /* Uses flexbox to align content inside the link (for example, an icon next to text). */
   align-items: center;
+  /* Vertically centers the content within the link. */
   gap: 6px;
+  /* Adds a 6px gap between the elements inside each link. */
   font-weight: 500;
+  /* Sets the font weight to 500 (medium) for the navigation links. */
   color: #000;
+  /* Sets the text color to black for the navigation links. */
 }
 .top-nav nav a:hover {
+  /* Targets the hover state for navigation links within the top-nav. */
   opacity: 0.8;
+  /* Reduces the opacity to 0.8 on hover, giving a subtle visual feedback effect. */
 }
 .logo-container img {
+  /* Targets any <img> element inside an element with the class "logo-container". */
   height: 30px;
+  /* Sets the height of the logo image to 30px for consistency across the top navigation. */
 }
 
 /****************************************************
  * Flight Search Section
  ****************************************************/
+// ──────────────────────────────────────────────
+// This section introduces styles for the flight search area of the website.
+
 .flight-search-section {
+  /* Targets the element with the class "flight-search-section". */
   background-color: #fff;
+  /* Sets a white background for the flight search section to make it stand out. */
   border-radius: 8px;
+  /* Rounds the corners of the section with an 8px radius. */
   padding: 16px;
+  /* Adds 16px padding on all sides to space the content away from the edges. */
 }
 
 /* Journey Type (One Way / Round Trip) */
+// ──────────────────────────────────────────────
+// This comment indicates that the following styles are for selecting the journey type, such as One Way or Round Trip.
+
 .journey-type {
+  /* Targets the element with the class "journey-type". */
   display: flex;
+  /* Uses flexbox to arrange radio buttons or labels in a row. */
   gap: 24px;
+  /* Adds a 24px gap between the journey type options. */
   margin-bottom: 16px;
+  /* Adds a 16px margin below the journey type section to separate it from subsequent elements. */
 }
 .journey-type label {
+  /* Targets all <label> elements within the "journey-type" section. */
   display: flex;
+  /* Uses flexbox to layout the label content (icon and text) inline. */
   align-items: center;
+  /* Vertically centers the content within the label. */
   gap: 4px;
+  /* Adds a 4px gap between elements inside the label (e.g., radio input and text). */
   font-size: 14px;
+  /* Sets the font size to 14px for the label text. */
   font-weight: 500;
+  /* Applies a medium font weight to make the labels prominent. */
   cursor: pointer;
+  /* Changes the cursor to a pointer to indicate that the label is clickable. */
 }
 .journey-type input[type="radio"] {
+  /* Targets any radio input inside the "journey-type" section. */
   cursor: pointer;
+  /* Ensures the cursor changes to a pointer when hovering over the radio button, indicating interactivity. */
 }
 
 /* Travel Details Row (From, To, Depart, Return, etc.) */
+// ──────────────────────────────────────────────
+// This section defines the layout for travel details inputs such as origin, destination, departure date, and return date.
+
 .travel-details {
+  /* Targets the element with the class "travel-details". */
   display: flex;
+  /* Uses flexbox to arrange travel detail items in a row. */
   align-items: center;
+  /* Vertically centers the travel detail items. */
   flex-wrap: wrap;
+  /* Allows items to wrap onto multiple lines if there isn’t enough horizontal space. */
   gap: 24px;
+  /* Sets a 24px gap between travel detail items. */
   margin-bottom: 16px;
+  /* Adds a 16px margin below the travel details row for spacing. */
 }
 .location-box,
 .date-box,
 .traveller-class {
+  /* Targets elements with the classes "location-box", "date-box", and "traveller-class". */
   display: flex;
+  /* Uses flexbox to layout the contents of these boxes. */
   flex-direction: column;
+  /* Arranges the contents in a vertical column (label on top, value below). */
 }
 .label {
+  /* Targets elements with the class "label". */
   font-size: 12px;
+  /* Sets a smaller font size (12px) for labels to indicate secondary information. */
   color: #666;
+  /* Applies a gray color (#666) to the text to give it a subdued appearance. */
   margin-bottom: 4px;
+  /* Adds a 4px margin below the label to separate it from the value. */
 }
 .value {
+  /* Targets elements with the class "value". */
   font-size: 14px;
+  /* Sets the font size to 14px for the main content or value. */
   font-weight: 500;
+  /* Applies a medium font weight to emphasize the value. */
 }
 .arrow-icon {
+  /* Targets elements with the class "arrow-icon". */
   width: 24px;
+  /* Sets the width of the arrow icon to 24px. */
   height: 24px;
+  /* Sets the height of the arrow icon to 24px, ensuring a square shape. */
 }
 
 .return-box .add-return {
+  /* Targets any element with the class "add-return" that is a descendant of an element with the class "return-box". */
   color: #0d8dcf;
+  /* Sets the text color to a specific blue (#0d8dcf) to highlight the "Add Return" option. */
   cursor: pointer;
+  /* Changes the cursor to a pointer to indicate that this element is clickable. */
 }
 
 /* Search Button */
+// ──────────────────────────────────────────────
+// This section styles the search button used in the flight search section.
+
 .search-button {
+  /* Targets any element with the class "search-button". */
   margin-left: auto; /* pushes the button to the right end if space allows */
+  /* Uses auto left margin to push the search button as far right as possible in a flex container. */
   background-color: #00baf2;
+  /* Sets a vibrant blue background color (#00baf2) for the search button. */
   color: #fff;
+  /* Sets the text color to white to contrast against the blue background. */
   border: none;
+  /* Removes any default border around the button. */
   border-radius: 4px;
+  /* Rounds the corners slightly with a 4px radius for a modern look. */
   padding: 10px 20px;
+  /* Adds 10px vertical and 20px horizontal padding to increase the clickable area. */
   font-size: 14px;
+  /* Sets the font size to 14px to ensure text is legible. */
   font-weight: 500;
+  /* Applies a medium font weight to the button text. */
   cursor: pointer;
+  /* Changes the cursor to a pointer when hovering, indicating that the element is clickable. */
 }
 .search-button:hover {
+  /* Targets the hover state for the search button. */
   background-color: #009bd1;
+  /* Changes the background color to a slightly darker blue (#009bd1) when hovered to indicate interactivity. */
 }
 
 /****************************************************
  * Special Fares
  ****************************************************/
+// ──────────────────────────────────────────────
+// This section styles a “Special Fares” section, likely used to highlight discounted or promotional offers.
+
 .special-fares {
+  /* Targets any element with the class "special-fares". */
   border-top: 1px solid #eee;
+  /* Adds a light gray top border (1px solid #eee) to visually separate the section from the content above. */
   padding-top: 16px;
+  /* Adds 16px of padding at the top to create spacing between the border and the content. */
 }
 .special-fares .title {
+  /* Targets elements with the class "title" that are descendants of the "special-fares" element. */
   display: flex;
+  /* Uses flexbox to align the title elements horizontally. */
   align-items: center;
+  /* Vertically centers items within the title container. */
   gap: 16px;
+  /* Sets a 16px gap between the title and any adjacent elements (like an icon). */
   font-weight: 500;
+  /* Applies a medium font weight to the title for emphasis. */
   margin-bottom: 12px;
+  /* Adds a 12px margin below the title to separate it from the fare options. */
 }
 .special-fares .title .extra-savings {
+  /* Targets any element with the class "extra-savings" that is a descendant of an element with class "title" inside "special-fares". */
   display: flex;
+  /* Uses flexbox to arrange its child elements inline. */
   align-items: center;
+  /* Vertically centers the elements inside the extra-savings container. */
   gap: 6px;
+  /* Adds a 6px gap between elements to provide spacing (e.g., an icon and text). */
   font-size: 14px;
+  /* Sets the font size to 14px for consistency with nearby text. */
   color: #00a950; /* A greenish shade for "Extra Savings" */
+  /* Applies a greenish color (#00a950) to emphasize extra savings, as noted by the inline comment. */
 }
 .special-fares .fare-options {
+  /* Targets elements with the class "fare-options" inside "special-fares". */
   display: flex;
+  /* Uses flexbox to lay out fare option items horizontally. */
   gap: 24px;
+  /* Adds a 24px gap between each fare option for clear separation. */
 }
 .fare-option {
+  /* Targets elements with the class "fare-option". */
   display: flex;
+  /* Uses flexbox to arrange the content inside each fare option. */
   flex-direction: column;
+  /* Stacks the inner content vertically (for title, subtitle, etc.). */
   background-color: #f7f9fc;
+  /* Sets a very light background color (#f7f9fc) for each fare option to distinguish it from the page background. */
   border-radius: 4px;
+  /* Rounds the corners slightly with a 4px radius for a subtle effect. */
   padding: 8px 12px;
+  /* Adds 8px vertical and 12px horizontal padding to space out the content within each fare option. */
   cursor: pointer;
+  /* Changes the cursor to a pointer to indicate that the fare option is clickable. */
 }
 .fare-option:hover {
+  /* Targets the hover state for fare options. */
   background-color: #eef2f6;
+  /* Lightens the background color on hover (#eef2f6) to provide visual feedback when the user hovers over an option. */
 }
 .option-title {
+  /* Targets elements with the class "option-title" inside a fare option. */
   font-weight: 500;
+  /* Applies a medium font weight to emphasize the title of the fare option. */
   margin-bottom: 4px;
+  /* Adds a 4px margin below the title for spacing before the subtitle. */
 }
 .option-subtitle {
+  /* Targets elements with the class "option-subtitle". */
   font-size: 12px;
+  /* Sets the font size to 12px for secondary information. */
   color: #666;
+  /* Applies a gray color (#666) to the subtitle text for a subdued look. */
 }
 
 /****************************************************
  * LAST SECTION LAYOUT & ALIGNMENT
  ****************************************************/
+// ──────────────────────────────────────────────
+// This section sets up the layout and alignment for the last section of the page, likely a feature or info block.
+
 .container-2 {
+  /* Targets any element with the class "container-2". */
   max-width: 1200px;          /* Adjust container width as desired */
+  /* Constrains the maximum width to 1200px to control layout on wide screens. */
   margin: 0 auto;             /* Center horizontally */
+  /* Centers the container horizontally using automatic left and right margins. */
   display: flex;
+  /* Uses flexbox to arrange the container’s child elements. */
   flex-wrap: wrap;            /* Wrap on small screens */
+  /* Allows child elements to wrap onto multiple lines on smaller screens. */
   align-items: center;
+  /* Vertically centers the items within the container. */
   justify-content: space-between;
+  /* Distributes the child elements evenly with space between them. */
   padding: 2rem 1rem;         /* Spacing around the section */
+  /* Adds vertical padding of 2rem and horizontal padding of 1rem for overall spacing. */
 }
 
 .left-side,
 .right-side {
+  /* Targets elements with the classes "left-side" and "right-side". */
   flex: 1 1 500px;            /* Each side takes roughly half the container */
+  /* Sets the flex properties so that each side can grow/shrink with a basis of 500px, roughly splitting the container. */
   min-width: 300px;           /* Prevents boxes from becoming too narrow */
+  /* Ensures that neither side shrinks below 300px in width for readability. */
   padding: 1rem;
+  /* Adds 1rem of padding to provide spacing within each side container. */
 }
 
 .left-side {
+  /* Targets only the element with the class "left-side". */
   display: flex;
+  /* Uses flexbox to layout content inside the left side. */
   justify-content: center;
+  /* Centers the content horizontally within the left side container. */
   align-items: center;
+  /* Centers the content vertically within the left side container. */
   text-align: center;         /* Ensures image is centered */
+  /* Applies center text alignment to ensure that any text or images are centered. */
 }
 
 .interface-img {
+  /* Targets any element with the class "interface-img". */
   max-width: 100%;            /* Make the image responsive */
+  /* Ensures the image scales down to fit its container without exceeding its natural width. */
   height: auto;
+  /* Maintains the image's aspect ratio by automatically adjusting the height. */
 }
 
 .right-side {
+  /* Targets only the element with the class "right-side". */
   display: flex;
+  /* Uses flexbox to align content inside the right side. */
   align-items: center;
+  /* Vertically centers the content within the right side container. */
   justify-content: center;
+  /* Horizontally centers the content within the right side container. */
 }
 
 .paytm-money-info {
+  /* Targets any element with the class "paytm-money-info". */
   max-width: 450px;           /* Constrain text content width */
+  /* Limits the maximum width of the text content to 450px for better readability. */
   text-align: left;
+  /* Aligns the text to the left within this container. */
 }
 
 .paytm-money-info .logo img {
+  /* Targets any <img> element inside an element with class "logo" which is a descendant of "paytm-money-info". */
   max-width: 150px;
+  /* Limits the width of the logo image to 150px. */
   height: auto;
+  /* Adjusts the height automatically to preserve the image’s aspect ratio. */
   margin-bottom: 20px;
+  /* Adds a 20px bottom margin to create spacing between the logo and subsequent content. */
 }
 
 .paytm-money-info .heading {
+  /* Targets any element with the class "heading" within "paytm-money-info". */
   font-size: 2rem;
+  /* Sets a larger font size (2rem) for the heading to draw attention. */
   font-weight: 600;
+  /* Applies a heavier font weight (600) to the heading for emphasis. */
   margin-bottom: 15px;
+  /* Adds a 15px margin below the heading to separate it from following text. */
   line-height: 1.2;
+  /* Sets the line height to 1.2 for balanced spacing between lines in the heading. */
 }
 
 .paytm-money-info .description {
+  /* Targets any element with the class "description" within "paytm-money-info". */
   font-size: 1rem;
+  /* Sets the font size to 1rem for the description text for consistency. */
   color: #555;
+  /* Applies a medium gray color (#555) to the description text for a subtle look. */
   margin-bottom: 20px;
+  /* Adds a 20px margin below the description to create space before the next element. */
 }
 
 .paytm-money-info .learn-more-button a {
+  /* Targets <a> elements within an element of class "learn-more-button" inside "paytm-money-info". */
   display: inline-block;
+  /* Sets the link to display as an inline-block element, allowing padding and dimensions to be applied. */
   background-color: #00a950;
+  /* Applies a green background (#00a950) to the link to make it stand out as a button. */
   color: #fff;
+  /* Sets the text color to white for contrast against the green background. */
   padding: 10px 20px;
+  /* Adds padding (10px vertical and 20px horizontal) to increase the clickable area. */
   border-radius: 4px;
+  /* Rounds the corners of the button slightly with a 4px radius. */
   font-weight: 600;
+  /* Applies a heavier font weight (600) to the link text to emphasize it. */
   text-decoration: none;
+  /* Removes any default text decoration, such as an underline, from the button. */
   transition: background-color 0.3s ease;
+  /* Adds a transition effect to the background color change over 0.3 seconds for a smooth hover animation. */
 }
 
 .paytm-money-info .learn-more-button a:hover {
+  /* Targets the hover state for the learn-more button link. */
   background-color: #008f3e;
+  /* Changes the background color to a darker green (#008f3e) on hover to indicate interactivity. */
 }
 
 /* FORCE WHITE BACKGROUND FOR LAST SECTION */
+// ──────────────────────────────────────────────
+// This style rule forces a white background for any section that has both a <section> element and the class "py-3", overriding other background settings.
+
 section.py-3 {
+  /* Targets <section> elements with the class "py-3". */
   background-color: #fff !important;
+  /* Sets the background color to white and uses !important to override any conflicting styles. */
 }
 
 /****************************************************
  * RESPONSIVE MEDIA QUERIES
  ****************************************************/
+// ──────────────────────────────────────────────
+// This section contains additional media queries to ensure the layout adjusts properly for different screen sizes (mobile, tablet, desktop).
 
 /* Mobile Devices (max-width: 576px) */
+// ──────────────────────────────────────────────
+// Applies styles for devices with a maximum width of 576px (mobile screens).
+
 @media (max-width: 576px) {
   body {
+    /* Targets the <body> element on small screens. */
     font-size: 12px;
+    /* Reduces the base font size to 12px for better fitting on mobile devices. */
   }
   
   .page-wrapper {
+    /* Targets the container with class "page-wrapper" on mobile. */
     width: 100%;
+    /* Sets the width to 100% to utilize the full screen width. */
     padding: 8px 0;
+    /* Reduces the vertical padding to 8px for a more compact layout. */
   }
   
   .navbar-nav .nav-link {
+    /* Targets navigation links on mobile devices. */
     font-size: 12px;
+    /* Reduces the font size to 12px to conserve space on smaller screens. */
   }
   
   .container-2 {
+    /* Targets the container with class "container-2" on mobile devices. */
     flex-direction: column;
+    /* Stacks child elements vertically instead of horizontally for narrow screens. */
     padding: 1rem;
+    /* Adjusts the padding to 1rem for appropriate spacing on mobile. */
   }
   
   .left-side,
   .right-side {
+    /* Targets both side containers within "container-2" on mobile. */
     flex: 1 1 100%;
+    /* Ensures each side takes the full available width (100%) when stacked vertically. */
     max-width: 100%;
+    /* Prevents the side containers from exceeding the full width of the container. */
     padding: 0.5rem;
+    /* Reduces padding to 0.5rem to fit the smaller screen size. */
   }
   
   .paytm-money-info .heading {
+    /* Targets the heading within "paytm-money-info" on mobile. */
     font-size: 1.5rem;
+    /* Reduces the heading font size to 1.5rem for better fit on small screens. */
   }
   
   .paytm-money-info .description {
+    /* Targets the description text within "paytm-money-info" on mobile. */
     font-size: 0.9rem;
+    /* Sets the font size to 0.9rem for improved readability on smaller devices. */
   }
   
   .paytm-money-info .learn-more-button a {
+    /* Targets the learn-more button link on mobile. */
     padding: 8px 16px;
+    /* Reduces the padding to 8px vertically and 16px horizontally for a more compact button. */
     font-size: 0.9rem;
+    /* Reduces the font size to 0.9rem for consistency with other mobile text sizes. */
   }
 }
 
 /* Tablet Devices (min-width: 577px) and (max-width: 991px) */
+// ──────────────────────────────────────────────
+// Applies styles for tablet devices with widths between 577px and 991px.
+
 @media (min-width: 577px) and (max-width: 991px) {
   body {
+    /* Targets the <body> element for tablet screens. */
     font-size: 13px;
+    /* Sets the base font size to 13px, which is a midpoint between mobile and desktop sizes. */
   }
   
   .page-wrapper {
+    /* Targets the page wrapper on tablet devices. */
     width: 90%;
+    /* Sets the width to 90% of the viewport to allow for some margin on the sides. */
     padding: 12px 0;
+    /* Adds 12px vertical padding to maintain consistent spacing. */
   }
   
   .navbar-brand img {
+    /* Targets the logo image within the navbar on tablets. */
     max-height: 23px;
+    /* Limits the logo height to 23px, slightly larger than mobile but smaller than desktop. */
   }
   
   .navbar-nav .nav-link {
+    /* Targets the navigation links on tablet devices. */
     font-size: 14px;
+    /* Sets the font size to 14px, providing a balance between mobile and desktop sizes. */
   }
   
   .container-2 {
+    /* Targets the container with class "container-2" on tablets. */
     flex-direction: row;
+    /* Arranges the children in a row, as there is enough screen width on tablets. */
     align-items: center;
+    /* Vertically centers the child elements. */
     justify-content: center;
+    /* Horizontally centers the container’s content. */
     padding: 1.5rem 1rem;
+    /* Uses 1.5rem vertical and 1rem horizontal padding for appropriate spacing. */
   }
   
   .left-side,
   .right-side {
+    /* Targets both side containers on tablet devices. */
     flex: 1 1 45%;
+    /* Allows each side to take roughly 45% of the container width, leaving some space between them. */
     max-width: 45%;
+    /* Constrains each side to a maximum width of 45% for balance. */
     padding: 1rem;
+    /* Provides 1rem of padding for spacing within each side. */
   }
   
   .paytm-money-info .heading {
+    /* Targets the heading within "paytm-money-info" for tablets. */
     font-size: 1.75rem;
+    /* Sets the heading font size to 1.75rem for a balanced appearance on tablet screens. */
   }
   
   .paytm-money-info .description {
+    /* Targets the description text within "paytm-money-info" on tablets. */
     font-size: 0.95rem;
+    /* Adjusts the description font size to 0.95rem for optimal readability on a medium screen. */
   }
 }
 
 /* Desktop Devices (min-width: 992px) */
+// ──────────────────────────────────────────────
+// Applies styles for desktop devices with a viewport width of at least 992px.
+
 @media (min-width: 992px) {
   body {
+    /* Targets the <body> element for desktop screens. */
     font-size: 14px;
+    /* Sets the base font size to 14px, which is standard for desktop viewing. */
   }
   
   .page-wrapper {
+    /* Targets the page wrapper on desktops. */
     width: 1160px;
+    /* Uses a fixed width of 1160px to maintain a consistent layout on larger screens. */
   }
   
   .container-2 {
+    /* Targets the container with class "container-2" on desktop devices. */
     flex-direction: row;
+    /* Arranges child elements in a row for optimal layout on wide screens. */
     padding: 2rem 1rem;
+    /* Applies 2rem vertical and 1rem horizontal padding for spacious design. */
   }
   
   .left-side,
   .right-side {
+    /* Targets both side containers on desktops. */
     flex: 1 1 500px;
+    /* Allows each side to occupy roughly 500px, ensuring a balanced split of the container. */
     max-width: 500px;
+    /* Sets a maximum width of 500px for each side to prevent them from growing too large. */
     padding: 1rem;
+    /* Applies 1rem padding for inner spacing within each container. */
   }
   
   .paytm-money-info .heading {
+    /* Targets the heading within "paytm-money-info" on desktop devices. */
     font-size: 2rem;
+    /* Sets the heading font size to 2rem for a bold and prominent display on large screens. */
   }
   
   .paytm-money-info .description {
+    /* Targets the description text within "paytm-money-info" for desktop devices. */
     font-size: 1rem;
+    /* Sets the description font size to 1rem to ensure consistency with other text elements on desktop. */
   }
 }
