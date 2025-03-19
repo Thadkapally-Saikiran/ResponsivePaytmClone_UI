@@ -2,7 +2,7 @@
 
 ![](paytm.png)
 
-A responsive, static web interface inspired by Paytm's design. Built using HTML, CSS, JavaScript, and Bootstrap, this project demonstrates modern, mobile-friendly UI techniques with clean, modular code.
+A responsive, static web interface inspired by Paytm's design. Built using HTML, CSS and Bootstrap, this project demonstrates modern, mobile-friendly UI techniques with clean, modular code.
 
 ---
 
@@ -35,7 +35,7 @@ The design is fully responsive, ensuring a great user experience on desktop, tab
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap  
+- **Frontend:** HTML, CSS, Bootstrap  
 - **Icons:** Bootstrap Icons, Font Awesome
 
 ---
