@@ -1,9 +1,18 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
 <html lang="en">
+<!-- Opens the HTML document and sets the language to English -->
+
 <head>
+  <!-- Head section containing meta-information and links to stylesheets and scripts -->
   <meta charset="UTF-8" />
+  <!-- Sets the character encoding to UTF-8 for proper text rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Configures the viewport for responsive design on mobile devices -->
   <title>Paytm Clone</title>
+  <!-- Sets the title of the webpage that appears in the browser tab -->
+  
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,28 +20,44 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <!-- Links the Bootstrap CSS library from a CDN to style the page with Bootstrap components -->
+
   <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
+  <!-- Links the Bootstrap Icons stylesheet to enable icon usage throughout the page -->
+
   <!-- Combined CSS -->
   <link rel="stylesheet" href="./style.css" />
+  <!-- Links an external custom CSS file (style.css) for additional styling -->
 </head>
+
 <body>
+  <!-- Body section starts here; contains the visible content of the webpage -->
 
   <!-- ============================
        1. Responsive Navbar
   ============================ -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Defines a responsive navigation bar with Bootstrap classes:
+         - navbar: indicates a navigation component.
+         - navbar-expand-lg: navbar expands (shows menu) on large screens.
+         - navbar-light bg-white: light-colored navbar with white background.
+         - shadow-sm: applies a small box shadow for depth -->
     <div class="container">
+      <!-- Container class centers and constrains the navbar content -->
+
       <!-- Paytm Logo -->
       <a class="navbar-brand" href="https://paytm.com/">
+        <!-- Link styled as navbar-brand that directs to the Paytm homepage -->
         <img
           src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg"
           alt="Paytm Logo"
           height="30"
         />
+        <!-- Displays the Paytm logo image with an alternative text and fixed height -->
       </a>
 
       <!-- Navbar Toggler (Mobile) -->
@@ -45,14 +70,20 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+        <!-- Button to toggle the navbar collapse on mobile devices -->
         <span class="navbar-toggler-icon"></span>
+        <!-- Icon for the toggler button provided by Bootstrap -->
       </button>
 
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Collapsible container for navigation links, which toggles on small screens -->
         <ul class="navbar-nav ms-auto">
-          <!-- Ticket Booking -->
+          <!-- Unordered list for nav items; ms-auto pushes items to the right -->
+
+          <!-- Ticket Booking Dropdown -->
           <li class="nav-item dropdown">
+            <!-- Navigation item with dropdown functionality -->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -62,22 +93,27 @@
             >
               Ticket Booking
             </a>
+            <!-- Link that acts as a dropdown toggle for Ticket Booking -->
             <ul class="dropdown-menu">
+              <!-- Dropdown menu container -->
               <li>
                 <a class="dropdown-item" href="https://paytm.com/movies">
                   Movie Tickets
                 </a>
+                <!-- Dropdown item linking to Movie Tickets page -->
               </li>
               <li>
                 <a class="dropdown-item" href="https://tickets.paytm.com/flights/">
                   Flight Tickets
                 </a>
+                <!-- Dropdown item linking to Flight Tickets page -->
               </li>
             </ul>
           </li>
 
-          <!-- Recharge & Bills -->
+          <!-- Recharge & Bills Dropdown -->
           <li class="nav-item dropdown">
+            <!-- Another dropdown navigation item -->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -87,22 +123,26 @@
             >
               Recharge & Bills
             </a>
+            <!-- Link acting as dropdown toggle for Recharge & Bills -->
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="https://paytm.com/recharge">
                   Mobile Recharge
                 </a>
+                <!-- Dropdown item for Mobile Recharge -->
               </li>
               <li>
                 <a class="dropdown-item" href="https://paytm.com/electricity-bill-payment">
                   Electricity Bill
                 </a>
+                <!-- Dropdown item for Electricity Bill Payment -->
               </li>
             </ul>
           </li>
 
-          <!-- Payments & Services -->
+          <!-- Payments & Services Dropdown -->
           <li class="nav-item dropdown">
+            <!-- Dropdown navigation item for Payments & Services -->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -112,22 +152,26 @@
             >
               Payments & Services
             </a>
+            <!-- Dropdown toggle link -->
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="https://www.paytmbank.com/business-banking/wallet">
                   Wallet
                 </a>
+                <!-- Dropdown item linking to Wallet page -->
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.paytmpayments.com/upi">
                   UPI Payments
                 </a>
+                <!-- Dropdown item linking to UPI Payments page -->
               </li>
             </ul>
           </li>
 
-          <!-- Paytm for Business -->
+          <!-- Paytm for Business Dropdown -->
           <li class="nav-item dropdown">
+            <!-- Dropdown item for Paytm for Business section -->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -137,22 +181,26 @@
             >
               Paytm for Business
             </a>
+            <!-- Dropdown toggle link -->
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="https://dashboard.paytm.com/login/">
                   Merchant Signup
                 </a>
+                <!-- Dropdown item for Merchant Signup -->
               </li>
               <li>
                 <a class="dropdown-item" href="https://business.paytm.com/">
                   Business Solutions
                 </a>
+                <!-- Dropdown item for Business Solutions -->
               </li>
             </ul>
           </li>
 
-          <!-- Company -->
+          <!-- Company Dropdown -->
           <li class="nav-item dropdown">
+            <!-- Dropdown navigation item for Company -->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -162,33 +210,41 @@
             >
               Company
             </a>
+            <!-- Dropdown toggle link -->
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="https://paytm.com/about-us">
                   About Us
                 </a>
+                <!-- Dropdown item linking to About Us page -->
               </li>
               <li>
                 <a class="dropdown-item" href="https://paytm.com/careers/">
                   Careers
                 </a>
+                <!-- Dropdown item linking to Careers page -->
               </li>
             </ul>
           </li>
 
           <!-- Download App Link -->
           <li class="nav-item d-flex align-items-center">
+            <!-- Navigation item for Download App; uses flex classes for vertical alignment -->
             <a class="nav-link download-link" href="#">
               <i class="bi bi-download"></i> Download App
             </a>
+            <!-- Link with a Bootstrap Icon for download followed by the text "Download App" -->
           </li>
 
           <!-- Sign In Button -->
           <li class="nav-item">
+            <!-- Navigation item for Sign In -->
             <a class="sign-in-btn d-flex align-items-center" href="#">
+              <!-- Link styled as sign-in button with flex properties for alignment -->
               <!-- Circle portion for user icon -->
               <div class="icon-circle d-flex align-items-center justify-content-center">
                 <i class="bi bi-person-fill"></i>
+                <!-- Bootstrap Icon for a user/person -->
               </div>
               <!-- Sign In text -->
               <span>Sign In</span>
@@ -203,426 +259,314 @@
        2. Flight Search Section
   ============================ -->
   <section class="page-wrapper">
+    <!-- Wrapper section for the flight search functionality -->
+
     <!-- Top Navigation (Flights / Bus / Trains / Intl...) -->
     <div class="top-nav">
+      <!-- Container for the top navigation links -->
       <nav>
+        <!-- Navigation element containing several links -->
         <a href="https://tickets.paytm.com/flights/" class="active">
+          <!-- Active link for Flights -->
           <img 
             src="https://pwebassets.paytm.com/frontendcommonweb/static/eb6953f1..svg" 
             alt="Flights" 
             height="25" 
             width="25"
           />
+          <!-- Icon for Flights -->
           <span>Flights</span>
+          <!-- Label for the Flights link -->
         </a>
         <a href="https://tickets.paytm.com/bus/">
+          <!-- Link for Bus -->
           <img 
             src="https://pwebassets.paytm.com/frontendcommonweb/static/df0e26a9..svg" 
             alt="Bus" 
             height="25" 
             width="25"
           />
+          <!-- Icon for Bus -->
           <span>Bus</span>
+          <!-- Label for the Bus link -->
         </a>
         <a href="https://tickets.paytm.com/trains/">
+          <!-- Link for Trains -->
           <img 
             src="https://pwebassets.paytm.com/frontendcommonweb/static/e398bd37..svg" 
             alt="Trains" 
             height="25" 
             width="25"
           />
+          <!-- Icon for Trains -->
           <span>Trains</span>
+          <!-- Label for the Trains link -->
         </a>
         <a href="https://tickets.paytm.com/international-flights/">
+          <!-- Link for International Flights -->
           <img 
             src="https://pwebassets.paytm.com/frontendcommonweb/static/add4d679..svg" 
             alt="Intl. Flights" 
             height="25" 
             width="25"
           />
+          <!-- Icon for International Flights -->
           <span>Intl. Flights</span>
+          <!-- Label for the International Flights link -->
         </a>
       </nav>
       <div class="logo-container">
+        <!-- Container for the travel section logo -->
         <img 
           src="https://paytmtravel-images-akamai.paytm.com/icons/Paytm_Travel_Logo.svg" 
           alt="Paytm Travel Logo"
         />
+        <!-- Displays the Paytm Travel logo -->
       </div>
     </div>
 
     <!-- Flight Search Section -->
     <div class="flight-search-section">
+      <!-- Container for flight search inputs and options -->
+
       <!-- Journey Type -->
       <div class="journey-type">
+        <!-- Section for selecting journey type (one-way or round-trip) -->
         <label>
           <input type="radio" name="journeyType" value="oneWay" checked />
+          <!-- Radio input for One Way journey, checked by default -->
           One Way
         </label>
         <label>
           <input type="radio" name="journeyType" value="roundTrip" />
+          <!-- Radio input for Round Trip journey -->
           Round Trip
         </label>
       </div>
 
       <!-- Travel Details -->
       <div class="travel-details">
+        <!-- Container for travel detail inputs such as location and dates -->
         <div class="location-box from">
+          <!-- Section for 'From' location -->
           <span class="label">From</span>
+          <!-- Label text -->
           <span class="value">Delhi (DEL)</span>
+          <!-- Value text showing starting location -->
         </div>
         <img 
           class="arrow-icon" 
           src="https://pwebassets.paytm.com/frontendcommonweb/static/e5e744ba..png" 
           alt="Arrow"
         />
+        <!-- Displays an arrow icon between From and To boxes -->
         <div class="location-box to">
+          <!-- Section for 'To' location -->
           <span class="label">To</span>
+          <!-- Label text -->
           <span class="value">Mumbai (BOM)</span>
+          <!-- Value text showing destination -->
         </div>
 
         <div class="date-box">
+          <!-- Date selection box for departure date -->
           <span class="label">Depart</span>
+          <!-- Label text -->
           <span class="value">Mon, 24 Feb 25</span>
+          <!-- Value text showing departure date -->
         </div>
         <div class="date-box return-box">
+          <!-- Date selection box for return date -->
           <span class="label">Return</span>
+          <!-- Label text -->
           <span class="value add-return">Add Return</span>
+          <!-- Value text with option to add a return date if needed -->
         </div>
 
         <div class="traveller-class">
+          <!-- Section for selecting number of travellers and travel class -->
           <span class="label">Passenger &amp; Class</span>
+          <!-- Label text -->
           <span class="value">1 Traveller, Economy</span>
+          <!-- Value text showing traveller count and class -->
         </div>
 
         <button class="search-button">Search Flights</button>
+        <!-- Button to trigger flight search action -->
       </div>
 
       <!-- Special Fares -->
       <div class="special-fares">
+        <!-- Section highlighting any special fare options -->
         <div class="title">
+          <!-- Title container -->
           <span>Special Fares (optional)</span>
+          <!-- Title text -->
           <span class="extra-savings">
+            <!-- Container for extra savings label -->
             <img 
               src="https://pwebassets.paytm.com/frontendcommonweb/static/a6fdca89..png" 
               alt="Rupee Symbol"
               height="16"
             />
+            <!-- Icon for Rupee Symbol -->
             Extra Savings
+            <!-- Text indicating extra savings option -->
           </span>
         </div>
         <div class="fare-options">
+          <!-- Container for different fare options -->
           <div class="fare-option">
+            <!-- Individual fare option -->
             <div class="option-title">Armed Forces</div>
+            <!-- Title for this fare option -->
             <div class="option-subtitle">Up to ₹600 off</div>
+            <!-- Subtitle showing discount details -->
           </div>
           <div class="fare-option">
+            <!-- Another fare option -->
             <div class="option-title">Student</div>
+            <!-- Title for student fare option -->
             <div class="option-subtitle">Extra Baggage</div>
+            <!-- Subtitle showing benefit details -->
           </div>
           <div class="fare-option">
+            <!-- Another fare option -->
             <div class="option-title">Senior Citizen</div>
+            <!-- Title for senior citizen option -->
             <div class="option-subtitle">Up to ₹600 off</div>
+            <!-- Subtitle with discount details -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-
   <!-- Carousel-like Banner Section with Sliding -->
-<section class="py-3" style="background-color: #e8f8fd;">
-  <div class="container">
-    <!-- Bootstrap Carousel (no auto-slide) -->
-    <div id="bannerCarousel" class="carousel slide" data-bs-ride="false">
-      
-      <!-- Slides wrapper -->
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-center align-items-center">
-            <img
-              src="../assets/flight.avif"
-              alt="Banner 1"
-              style="width:376px; height:125px;"
-            />
-            <img
-              src="../assets/bag.avif"
-              alt="Banner 2"
-              style="width:376px; height:125px;"
-            />
+  <section class="py-3" style="background-color: #e8f8fd;">
+    <!-- Section with padding-y of 3 and a light blue background -->
+    <div class="container">
+      <!-- Bootstrap container for centering content -->
+      <!-- Bootstrap Carousel (no auto-slide) -->
+      <div id="bannerCarousel" class="carousel slide" data-bs-ride="false">
+        <!-- Carousel element with ID "bannerCarousel"; data-bs-ride="false" disables auto-sliding -->
+        
+        <!-- Slides wrapper -->
+        <div class="carousel-inner">
+          <!-- Container for carousel slides -->
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <!-- First slide marked as active -->
+            <div class="d-flex justify-content-center align-items-center">
+              <!-- Flex container to center images both vertically and horizontally -->
+              <img
+                src="../assets/flight.avif"
+                alt="Banner 1"
+                style="width:376px; height:125px;"
+              />
+              <!-- Image element for first banner with fixed dimensions -->
+              <img
+                src="../assets/bag.avif"
+                alt="Banner 2"
+                style="width:376px; height:125px;"
+              />
+              <!-- Image element for second banner with fixed dimensions -->
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <!-- Second slide -->
+            <div class="d-flex justify-content-center align-items-center">
+              <!-- Flex container for centering images -->
+              <img
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/2988611/6239586378108886.jpg"
+                alt="Banner 3"
+                style="width:376px; height:125px;"
+              />
+              <!-- Image element for third banner with fixed dimensions -->
+              <img
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/2890666/10903120897665220.jpg"
+                alt="Banner 4"
+                style="width:376px; height:125px;"
+              />
+              <!-- Image element for fourth banner with fixed dimensions -->
+            </div>
           </div>
         </div>
         
-        <!-- Slide 2 (use different images if you have more) -->
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center align-items-center">
-            <img
-              src="https://assetscdn1.paytm.com/images/catalog/view_item/2988611/6239586378108886.jpg"
-              alt="Banner 3"
-              style="width:376px; height:125px;"
-            />
-            <img
-              src="https://assetscdn1.paytm.com/images/catalog/view_item/2890666/10903120897665220.jpg"
-              alt="Banner 4"
-              style="width:376px; height:125px;"
-            />
-          </div>
-        </div>
-      </div>
-      
-      <!-- Custom Left Arrow -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#bannerCarousel"
-        data-bs-slide="prev"
-      >
-        <!-- Use the same arrow SVG, rotated 180° for "left" -->
-        <img
-          src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg"
-          alt="Left Arrow"
-          style="cursor: pointer; transform: rotate(180deg); width:24px; height:24px;"
-        />
-        <span class="visually-hidden">Previous</span>
-      </button>
+        <!-- Custom Left Arrow -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="prev"
+        >
+          <!-- Button to control previous slide -->
+          <!-- Use the same arrow SVG, rotated 180° for "left" -->
+          <img
+            src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg"
+            alt="Left Arrow"
+            style="cursor: pointer; transform: rotate(180deg); width:24px; height:24px;"
+          />
+          <!-- Image for left arrow icon with rotation, pointer cursor, and fixed size -->
+          <span class="visually-hidden">Previous</span>
+          <!-- Text for screen readers -->
+        </button>
 
-      <!-- Custom Right Arrow -->
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#bannerCarousel"
-        data-bs-slide="next"
-      >
-        <img
-          src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg"
-          alt="Right Arrow"
-          style="cursor: pointer; width:24px; height:24px;"
-        />
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Recharges & Bill Payments Section -->
-<section class="py-3" style="background-color: #f7f9fc;">
-  <div class="container">
-    <div class="row g-3">
-      <!-- Recharges Column -->
-      <div class="col-md-6">
-        <div class="bg-white p-3 rounded-2 shadow-sm h-100">
-          <!-- Heading -->
-          <h6 class="fw-bold mb-3" style="font-size:16px;">Recharges</h6>
-          
-          <!-- Icon Grid -->
-          <div class="d-flex flex-wrap gap-3 mb-3">
-            <!-- Mobile Recharge -->
-            <a 
-              href="https://paytm.com/recharge" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839929/1725624139422.png"
-                alt="Mobile Recharge"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">Mobile Recharge</span>
-            </a>
-            
-            <!-- DTH Recharge -->
-            <a 
-              href="https://paytm.com/dth-recharge" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839930/1725624172567.png"
-                alt="DTH Recharge"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">DTH Recharge</span>
-            </a>
-            
-            <!-- FasTag Recharge -->
-            <a 
-              href="https://paytm.com/fastag-recharge" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839931/1725624207849.png"
-                alt="FasTag Recharge"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">FasTag Recharge</span>
-            </a>
-            
-            <!-- View All Products -->
-            <a 
-              href="javascript://" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png"
-                alt="View All Products"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">View All Products</span>
-            </a>
-          </div>
-          
-          <!-- Bottom Banner -->
-          <a 
-            href="https://m.paytm.me/MobilePrepaidLatest" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            <img
-              src="https://assetscdn1.paytm.com/images/catalog/view/1732260479349.png"
-              alt="Mobile Recharge Offer"
-              class="img-fluid"
-            />
-          </a>
-        </div>
-      </div>
-      
-      <!-- Bill Payments Column -->
-      <div class="col-md-6">
-        <div class="bg-white p-3 rounded-2 shadow-sm h-100">
-          <!-- Heading -->
-          <h6 class="fw-bold mb-3" style="font-size:16px;">Bill Payments</h6>
-          
-          <!-- Icon Grid -->
-          <div class="d-flex flex-wrap gap-3 mb-3">
-            <!-- Credit Card Payment -->
-            <a 
-              href="https://paytm.com/credit-card-bill-payment" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839933/1725624373019.png"
-                alt="Credit Card Payment"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">Credit Card Payment</span>
-            </a>
-            
-            <!-- Electricity Bill -->
-            <a 
-              href="https://paytm.com/electricity-bill-payment" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839934/1725624413059.png"
-                alt="Electricity Bill"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">Electricity Bill</span>
-            </a>
-            
-            <!-- Broadband Bill -->
-            <a 
-              href="https://paytm.com/broadband-bill-payment" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839935/1725624449393.png"
-                alt="Broadband Bill"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">Broadband Bill</span>
-            </a>
-            
-            <!-- View All Products -->
-            <a 
-              href="javascript://" 
-              target="_blank" 
-              rel="noreferrer" 
-              class="text-decoration-none d-flex flex-column align-items-center"
-            >
-              <img
-                src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png"
-                alt="View All Products"
-                style="width:40px;"
-              />
-              <span class="mt-1 text-dark" style="font-size:14px;">View All Products</span>
-            </a>
-          </div>
-          
-          <!-- Bottom Banner -->
-          <a 
-            href="https://m.paytm.me/BBLLPaytWebsite" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            <img
-              src="https://assetscdn1.paytm.com/images/catalog/view/1732260510732.png"
-              alt="Broadband Recharge Offer"
-              class="img-fluid"
-            />
-          </a>
-        </div>
+        <!-- Custom Right Arrow -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="next"
+        >
+          <!-- Button to control next slide -->
+          <img
+            src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg"
+            alt="Right Arrow"
+            style="cursor: pointer; width:24px; height:24px;"
+          />
+          <!-- Image for right arrow icon with pointer cursor and fixed size -->
+          <span class="visually-hidden">Next</span>
+          <!-- Text for screen readers -->
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<section class="py-3">
-  <div class="container-2">
-    <div class="left-side">
-      <img src="https://assetscdn1.paytm.com/images/catalog/view/1725446620368.png" alt="Paytm Money Interface" class="interface-img">
-    </div>
-    <div class="right-side">
-      <div class="paytm-money-info">
-        <div class="logo">
-          <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png">
-        </div>
-        <div class="heading">
-          Build Long-term <br> Wealth & Achieve your <br> Goals.
-        </div>
-        <div class="description">
-          Investing on Paytm Money is transparent, low-cost and <br> commission-free. Buy stocks & mutual funds that can <br> help you create wealth & realise your dreams.
-        </div>
-        <div class="learn-more-button">
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-</body>
-</html>
+  <!-- Recharges & Bill Payments Section -->
+  <section class="py-3" style="background-color: #f7f9fc;">
+    <!-- Section with padding-y of 3 and a light background color -->
+    <div class="container">
+      <!-- Container for centering content -->
+      <div class="row g-3">
+        <!-- Bootstrap row with gap-3 between columns -->
+        <!-- Recharges Column -->
+        <div class="col-md-6">
+          <!-- Column occupying half width on medium and larger screens -->
+          <div class="bg-white p-3 rounded-2 shadow-sm h-100">
+            <!-- White background box with padding, rounded corners, small shadow, and full height -->
+            <!-- Heading -->
+            <h6 class="fw-bold mb-3" style="font-size:16px;">Recharges</h6>
+            <!-- Bold heading with bottom margin and specific font size -->
+            
+            <!-- Icon Grid -->
+            <div class="d-flex flex-wrap gap-3 mb-3">
+              <!-- Flex container that wraps items with a gap and bottom margin -->
+              <!-- Mobile Recharge -->
+              <a 
+                href="https://paytm.com/recharge" 
+                target="_blank" 
+                rel="noreferrer" 
+                class="text-decoration-none d-flex flex-column align-items-center"
+              >
+                <!-- Link styled as a flex column centered; no text decoration -->
+                <img
+                  src="https://assetscdn1.paytm.com/images/catalog/view_item/2839929/1725624139422.png"
+                  alt="Mobile Recharge"
+                  style="width:40px;"
+                />
+                <!-- Image for Mobile Recharge icon with fixed width -->
+                <span class="mt-1 text-dark" style="font-size:14px;">Mobile Recharge</span>
+                <!-- Text label below the icon with top margin an
