@@ -1,488 +1,488 @@
-/* =========================================
-   ORIGINAL CSS
-   ========================================= */
+/* ========================================= */  /* Start of original CSS header */
+/* ORIGINAL CSS */  /* Label for original CSS section */
+/* ========================================= */  /* End of original CSS header */
 
-/* Generic navbar link styling */
-.navbar-nav .nav-link {
-  font-weight: 500;
-  color: #000; /* Default link color */
-}
+/* Generic navbar link styling */  /* Comment describing the following block for navbar links */
+.navbar-nav .nav-link {  /* Selects all .nav-link elements within .navbar-nav */
+  font-weight: 500;  /* Sets the font weight to medium */
+  color: #000; /* Default link color set to black */
+}  /* End of navbar link styling block */
 
-/* Paytm Logo constraints */
-.navbar-brand img {
-  max-height: 25px;
-}
+/* Paytm Logo constraints */  /* Comment for Paytm Logo styling */
+.navbar-brand img {  /* Selects the <img> inside an element with class .navbar-brand */
+  max-height: 25px;  /* Limits the maximum height of the logo to 25px */
+}  /* End of Paytm Logo constraints block */
 
-/* ===========================
-   Download App Link Styling
-   =========================== */
-.download-link {
-  color: #002970 !important;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-.download-link:hover {
-  color: #001f50 !important;
-  text-decoration: none;
-}
-.download-link i {
-  font-size: 14px;
-}
+/* =========================== */  /* Separator comment for Download App Link styling */
+/* Download App Link Styling */  /* Label for Download App Link styling section */
+/* =========================== */  /* End separator comment */
+.download-link {  /* Selects elements with class .download-link */
+  color: #002970 !important;  /* Sets the text color with high specificity using !important */
+  font-weight: 500;  /* Sets medium font weight */
+  text-decoration: none;  /* Removes underline from links */
+  display: inline-flex;  /* Uses inline-flex for layout alignment */
+  align-items: center;  /* Vertically centers items inside the flex container */
+  gap: 5px;  /* Sets a gap of 5px between flex items */
+}  /* End of .download-link styling block */
+.download-link:hover {  /* Applies hover state styling for .download-link */
+  color: #001f50 !important;  /* Changes text color on hover, with !important */
+  text-decoration: none;  /* Ensures no underline on hover */
+}  /* End of .download-link hover block */
+.download-link i {  /* Selects any <i> elements inside .download-link */
+  font-size: 14px;  /* Sets the font size for the icon */
+}  /* End of .download-link icon styling */
 
-/* ===========================
-   Sign In Button Styling
-   =========================== */
-.sign-in-btn {
-  background-color: #002970;
-  border-radius: 50px; /* Pill shape */
-  padding: 5px 15px;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.sign-in-btn:hover {
-  background-color: #001f50;
-  color: #fff;
-  text-decoration: none;
-}
+/* =========================== */  /* Separator comment for Sign In Button styling */
+/* Sign In Button Styling */  /* Label for Sign In Button styling section */
+/* =========================== */  /* End separator comment */
+.sign-in-btn {  /* Selects elements with class .sign-in-btn */
+  background-color: #002970;  /* Sets the background color to a dark blue */
+  border-radius: 50px; /* Pill shape: rounds the corners to 50px */
+  padding: 5px 15px;  /* Adds vertical and horizontal padding */
+  color: #fff;  /* Sets the text color to white */
+  font-weight: 500;  /* Sets medium font weight */
+  text-decoration: none;  /* Removes any text underline */
+  border: none;  /* Removes any border */
+  display: inline-flex;  /* Uses inline-flex for layout */
+  align-items: center;  /* Vertically centers flex items */
+  gap: 8px;  /* Sets a gap of 8px between flex items */
+}  /* End of .sign-in-btn styling block */
+.sign-in-btn:hover {  /* Hover state styling for .sign-in-btn */
+  background-color: #001f50;  /* Darkens the background on hover */
+  color: #fff;  /* Keeps the text color white on hover */
+  text-decoration: none;  /* Ensures no text decoration on hover */
+}  /* End of .sign-in-btn hover block */
 
-/* Circle portion on the left with user icon */
-.icon-circle {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #00aef0; /* Light blue portion */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icon-circle i {
-  color: #fff;
-  font-size: 14px;
-}
+/* Circle portion on the left with user icon */  /* Comment for icon circle styling */
+.icon-circle {  /* Selects elements with class .icon-circle */
+  width: 28px;  /* Sets the width to 28px */
+  height: 28px;  /* Sets the height to 28px */
+  border-radius: 50%;  /* Makes the element circular */
+  background-color: #00aef0; /* Light blue background for the circle */
+  display: flex;  /* Uses flex display for centering content */
+  align-items: center;  /* Vertically centers content inside the circle */
+  justify-content: center;  /* Horizontally centers content inside the circle */
+}  /* End of .icon-circle styling */
+.icon-circle i {  /* Selects <i> elements inside .icon-circle */
+  color: #fff;  /* Sets the icon color to white */
+  font-size: 14px;  /* Sets the icon font size to 14px */
+}  /* End of .icon-circle icon styling */
 
-/* ===========================
-   Media Queries for Navbar Responsiveness
-   =========================== */
+/* =========================== */  /* Separator comment for media queries for Navbar Responsiveness */
+/* Media Queries for Navbar Responsiveness */  /* Label for responsive media query section */
+/* =========================== */  /* End separator comment */
 
-/* Mobile devices (max-width: 576px) */
-@media (max-width: 576px) {
-  .navbar-brand img {
-    max-height: 20px;
-  }
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-  .sign-in-btn {
-    padding: 4px 10px;
-    font-size: 12px;
-  }
-  .icon-circle {
-    width: 24px;
-    height: 24px;
-  }
-}
+/* Mobile devices (max-width: 576px) */  /* Comment indicating styles for mobile devices */
+@media (max-width: 576px) {  /* Media query for screens with max-width of 576px */
+  .navbar-brand img {  /* Targets logo image in navbar for mobile devices */
+    max-height: 20px;  /* Reduces maximum height of logo to 20px */
+  }  /* End mobile logo styling */
+  .navbar-nav .nav-link {  /* Targets navbar links on mobile devices */
+    font-size: 14px;  /* Sets the font size of navbar links to 14px */
+  }  /* End mobile navbar link styling */
+  .sign-in-btn {  /* Targets sign-in button for mobile devices */
+    padding: 4px 10px;  /* Adjusts padding for a smaller button */
+    font-size: 12px;  /* Reduces font size for mobile devices */
+  }  /* End mobile sign-in button styling */
+  .icon-circle {  /* Targets icon circle for mobile devices */
+    width: 24px;  /* Reduces width to 24px */
+    height: 24px;  /* Reduces height to 24px */
+  }  /* End mobile icon circle styling */
+}  /* End of mobile media query block */
 
-/* Tablets (min-width: 577px) and (max-width: 991px) */
-@media (min-width: 577px) and (max-width: 991px) {
-  .navbar-brand img {
-    max-height: 23px;
-  }
-  .navbar-nav .nav-link {
-    font-size: 15px;
-  }
-  .sign-in-btn {
-    padding: 5px 12px;
-    font-size: 14px;
-  }
-  .icon-circle {
-    width: 26px;
-    height: 26px;
-  }
-}
+/* Tablets (min-width: 577px) and (max-width: 991px) */  /* Comment for tablet-specific styling */
+@media (min-width: 577px) and (max-width: 991px) {  /* Media query for tablet devices */
+  .navbar-brand img {  /* Targets navbar logo for tablets */
+    max-height: 23px;  /* Sets maximum height to 23px */
+  }  /* End tablet logo styling */
+  .navbar-nav .nav-link {  /* Targets navbar links for tablets */
+    font-size: 15px;  /* Sets font size of navbar links to 15px */
+  }  /* End tablet navbar link styling */
+  .sign-in-btn {  /* Targets sign-in button for tablets */
+    padding: 5px 12px;  /* Adjusts padding for tablet view */
+    font-size: 14px;  /* Sets font size to 14px for tablets */
+  }  /* End tablet sign-in button styling */
+  .icon-circle {  /* Targets icon circle for tablets */
+    width: 26px;  /* Sets width to 26px */
+    height: 26px;  /* Sets height to 26px */
+  }  /* End tablet icon circle styling */
+}  /* End of tablet media query block */
 
-/* =========================================
-   NEW CSS (Appended)
-   ========================================= */
+/* ========================================= */  /* Separator comment for new appended CSS */
+/* NEW CSS (Appended) */  /* Label indicating the start of new appended CSS */
+/* ========================================= */  /* End separator comment */
 
-/* Global resets and font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: #000;
-  background-color: #e8f8fd; /* Light blue background */
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-img {
-  display: inline-block;
-}
+/* Global resets and font */  /* Comment for global reset and font settings */
+* {  /* Universal selector targeting all elements */
+  margin: 0;  /* Resets default margin to 0 */
+  padding: 0;  /* Resets default padding to 0 */
+  box-sizing: border-box;  /* Sets box-sizing to include padding and border in the element's total width and height */
+}  /* End of universal reset */
+body {  /* Targets the body element */
+  font-family: 'Inter', sans-serif;  /* Sets the global font family */
+  font-size: 14px;  /* Sets the base font size */
+  color: #000;  /* Sets the default text color to black */
+  background-color: #e8f8fd; /* Light blue background color for the body */
+}  /* End of body styling */
+a {  /* Targets all anchor (<a>) elements */
+  text-decoration: none;  /* Removes default underline from links */
+  color: inherit;  /* Inherits the text color from the parent element */
+}  /* End of anchor styling */
+img {  /* Targets all image (<img>) elements */
+  display: inline-block;  /* Sets display property to inline-block for images */
+}  /* End of image styling */
 
-/* Page Wrapper */
-.page-wrapper {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
+/* Page Wrapper */  /* Comment for styling the page wrapper */
+.page-wrapper {  /* Selects elements with class .page-wrapper */
+  width: 1160px;  /* Sets a fixed width of 1160px */
+  margin: 0 auto;  /* Centers the page wrapper horizontally */
+  padding: 16px 0;  /* Adds vertical padding of 16px */
+}  /* End of page wrapper styling */
 
-/****************************************************
- * Top Navigation (Flights | Bus | Trains | Intl...) 
- ****************************************************/
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-.top-nav nav {
-  display: flex;
-  gap: 24px;
-}
-.top-nav nav a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
-  color: #000;
-}
-.top-nav nav a:hover {
-  opacity: 0.8;
-}
-.logo-container img {
-  height: 30px;
-}
+/****************************************************/  /* Separator comment for Top Navigation */
+/* Top Navigation (Flights | Bus | Trains | Intl...) */  /* Label for top navigation section */
+/****************************************************/
+.top-nav {  /* Targets the top navigation container */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers the items */
+  justify-content: space-between;  /* Distributes space between items */
+  margin-bottom: 16px;  /* Adds bottom margin of 16px */
+}  /* End of .top-nav styling */
+.top-nav nav {  /* Targets the <nav> element inside .top-nav */
+  display: flex;  /* Uses flex layout for navigation links */
+  gap: 24px;  /* Adds a gap of 24px between navigation items */
+}  /* End of top-nav nav styling */
+.top-nav nav a {  /* Targets all <a> elements inside .top-nav nav */
+  display: flex;  /* Uses flex layout for links */
+  align-items: center;  /* Vertically centers items within the links */
+  gap: 6px;  /* Adds a gap of 6px between icon and text */
+  font-weight: 500;  /* Sets font weight to medium */
+  color: #000;  /* Sets link color to black */
+}  /* End of top-nav nav link styling */
+.top-nav nav a:hover {  /* Hover state for top navigation links */
+  opacity: 0.8;  /* Reduces opacity to 0.8 on hover */
+}  /* End of top-nav nav link hover styling */
+.logo-container img {  /* Targets the image inside .logo-container */
+  height: 30px;  /* Sets the height of the logo image to 30px */
+}  /* End of logo-container image styling */
 
-/****************************************************
- * Flight Search Section
- ****************************************************/
-.flight-search-section {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
-}
+/****************************************************/  /* Separator comment for Flight Search Section */
+/* Flight Search Section */  /* Label for Flight Search Section styling */
+/****************************************************/
+.flight-search-section {  /* Selects elements with class .flight-search-section */
+  background-color: #fff;  /* Sets the background color to white */
+  border-radius: 8px;  /* Rounds the corners with an 8px radius */
+  padding: 16px;  /* Adds padding of 16px on all sides */
+}  /* End of flight search section styling */
 
-/* Journey Type (One Way / Round Trip) */
-.journey-type {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 16px;
-}
-.journey-type label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-.journey-type input[type="radio"] {
-  cursor: pointer;
-}
+/* Journey Type (One Way / Round Trip) */  /* Comment for journey type styling */
+.journey-type {  /* Targets the journey type container */
+  display: flex;  /* Uses flex layout */
+  gap: 24px;  /* Adds a gap of 24px between options */
+  margin-bottom: 16px;  /* Adds bottom margin of 16px */
+}  /* End of journey type styling */
+.journey-type label {  /* Targets labels inside .journey-type */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers label contents */
+  gap: 4px;  /* Adds a gap of 4px between elements within the label */
+  font-size: 14px;  /* Sets the font size to 14px */
+  font-weight: 500;  /* Sets font weight to medium */
+  cursor: pointer;  /* Changes the cursor to pointer on hover */
+}  /* End of journey type label styling */
+.journey-type input[type="radio"] {  /* Targets radio inputs within .journey-type */
+  cursor: pointer;  /* Changes the cursor to pointer for radio inputs */
+}  /* End of radio input styling */
 
-/* Travel Details Row (From, To, Depart, Return, etc.) */
-.travel-details {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 16px;
-}
+/* Travel Details Row (From, To, Depart, Return, etc.) */  /* Comment for travel details styling */
+.travel-details {  /* Targets the travel details container */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers items */
+  flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+  gap: 24px;  /* Adds a gap of 24px between items */
+  margin-bottom: 16px;  /* Adds bottom margin of 16px */
+}  /* End of travel details styling */
 .location-box,
 .date-box,
-.traveller-class {
-  display: flex;
-  flex-direction: column;
-}
-.label {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 4px;
-}
-.value {
-  font-size: 14px;
-  font-weight: 500;
-}
-.arrow-icon {
-  width: 24px;
-  height: 24px;
-}
+.traveller-class {  /* Targets location, date, and traveller-class boxes */
+  display: flex;  /* Uses flex layout */
+  flex-direction: column;  /* Arranges children in a column */
+}  /* End of location, date, and traveller-class styling */
+.label {  /* Targets elements with class .label */
+  font-size: 12px;  /* Sets the font size to 12px */
+  color: #666;  /* Sets the text color to a medium gray */
+  margin-bottom: 4px;  /* Adds a bottom margin of 4px */
+}  /* End of .label styling */
+.value {  /* Targets elements with class .value */
+  font-size: 14px;  /* Sets the font size to 14px */
+  font-weight: 500;  /* Sets font weight to medium */
+}  /* End of .value styling */
+.arrow-icon {  /* Targets elements with class .arrow-icon */
+  width: 24px;  /* Sets the width to 24px */
+  height: 24px;  /* Sets the height to 24px */
+}  /* End of arrow-icon styling */
 
-.return-box .add-return {
-  color: #0d8dcf;
-  cursor: pointer;
-}
+.return-box .add-return {  /* Targets elements with class .add-return inside .return-box */
+  color: #0d8dcf;  /* Sets the text color to a blue shade */
+  cursor: pointer;  /* Changes the cursor to pointer */
+}  /* End of .return-box .add-return styling */
 
-/* Search Button */
-.search-button {
+/* Search Button */  /* Comment for search button styling */
+.search-button {  /* Targets elements with class .search-button */
   margin-left: auto; /* pushes the button to the right end if space allows */
-  background-color: #00baf2;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-.search-button:hover {
-  background-color: #009bd1;
-}
+  background-color: #00baf2;  /* Sets the background color to a bright blue */
+  color: #fff;  /* Sets the text color to white */
+  border: none;  /* Removes the border */
+  border-radius: 4px;  /* Rounds the corners with a 4px radius */
+  padding: 10px 20px;  /* Adds vertical padding of 10px and horizontal of 20px */
+  font-size: 14px;  /* Sets the font size to 14px */
+  font-weight: 500;  /* Sets font weight to medium */
+  cursor: pointer;  /* Changes the cursor to pointer on hover */
+}  /* End of search button styling */
+.search-button:hover {  /* Hover state styling for .search-button */
+  background-color: #009bd1;  /* Changes the background color on hover */
+}  /* End of search-button hover styling */
 
-/****************************************************
- * Special Fares
- ****************************************************/
-.special-fares {
-  border-top: 1px solid #eee;
-  padding-top: 16px;
-}
-.special-fares .title {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-weight: 500;
-  margin-bottom: 12px;
-}
-.special-fares .title .extra-savings {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
+/****************************************************/  /* Separator comment for Special Fares */
+/* Special Fares */  /* Label for special fares section */
+/****************************************************/
+.special-fares {  /* Targets the special fares container */
+  border-top: 1px solid #eee;  /* Adds a light gray top border */
+  padding-top: 16px;  /* Adds top padding of 16px */
+}  /* End of special fares container styling */
+.special-fares .title {  /* Targets the title inside .special-fares */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers title elements */
+  gap: 16px;  /* Adds a gap of 16px between elements */
+  font-weight: 500;  /* Sets font weight to medium */
+  margin-bottom: 12px;  /* Adds bottom margin of 12px */
+}  /* End of special fares title styling */
+.special-fares .title .extra-savings {  /* Targets .extra-savings within .special-fares .title */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers items */
+  gap: 6px;  /* Adds a gap of 6px between items */
+  font-size: 14px;  /* Sets font size to 14px */
   color: #00a950; /* A greenish shade for "Extra Savings" */
-}
-.special-fares .fare-options {
-  display: flex;
-  gap: 24px;
-}
-.fare-option {
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f9fc;
-  border-radius: 4px;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.fare-option:hover {
-  background-color: #eef2f6;
-}
-.option-title {
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-.option-subtitle {
-  font-size: 12px;
-  color: #666;
-}
+}  /* End of extra-savings styling */
+.special-fares .fare-options {  /* Targets the fare options container within .special-fares */
+  display: flex;  /* Uses flex layout */
+  gap: 24px;  /* Adds a gap of 24px between fare options */
+}  /* End of fare options container styling */
+.fare-option {  /* Targets individual fare option elements */
+  display: flex;  /* Uses flex layout */
+  flex-direction: column;  /* Arranges children in a column */
+  background-color: #f7f9fc;  /* Sets background color to a very light blue-gray */
+  border-radius: 4px;  /* Rounds corners with a 4px radius */
+  padding: 8px 12px;  /* Adds vertical padding of 8px and horizontal of 12px */
+  cursor: pointer;  /* Changes cursor to pointer on hover */
+}  /* End of fare-option styling */
+.fare-option:hover {  /* Hover state styling for fare options */
+  background-color: #eef2f6;  /* Lightens background on hover */
+}  /* End of fare-option hover styling */
+.option-title {  /* Targets the title within a fare option */
+  font-weight: 500;  /* Sets font weight to medium */
+  margin-bottom: 4px;  /* Adds bottom margin of 4px */
+}  /* End of option-title styling */
+.option-subtitle {  /* Targets the subtitle within a fare option */
+  font-size: 12px;  /* Sets font size to 12px */
+  color: #666;  /* Sets text color to a medium gray */
+}  /* End of option-subtitle styling */
 
-/****************************************************
- * LAST SECTION LAYOUT & ALIGNMENT
- ****************************************************/
-.container-2 {
+/****************************************************/  /* Separator comment for Last Section Layout & Alignment */
+/* LAST SECTION LAYOUT & ALIGNMENT */  /* Label for the last section layout styling */
+/****************************************************/
+.container-2 {  /* Targets elements with class .container-2 */
   max-width: 1200px;          /* Adjust container width as desired */
   margin: 0 auto;             /* Center horizontally */
-  display: flex;
-  flex-wrap: wrap;            /* Wrap on small screens */
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 1rem;         /* Spacing around the section */
-}
+  display: flex;  /* Uses flex layout */
+  flex-wrap: wrap;            /* Allows wrapping on small screens */
+  align-items: center;  /* Vertically centers items */
+  justify-content: space-between;  /* Distributes items with space between */
+  padding: 2rem 1rem;         /* Adds vertical and horizontal padding */
+}  /* End of .container-2 styling */
 
 .left-side,
-.right-side {
+.right-side {  /* Targets both .left-side and .right-side containers */
   flex: 1 1 500px;            /* Each side takes roughly half the container */
   min-width: 300px;           /* Prevents boxes from becoming too narrow */
-  padding: 1rem;
-}
+  padding: 1rem;  /* Adds padding of 1rem */
+}  /* End of left-side and right-side common styling */
 
-.left-side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.left-side {  /* Targets .left-side specifically */
+  display: flex;  /* Uses flex layout */
+  justify-content: center;  /* Horizontally centers content */
+  align-items: center;  /* Vertically centers content */
   text-align: center;         /* Ensures image is centered */
-}
+}  /* End of left-side styling */
 
-.interface-img {
-  max-width: 100%;            /* Make the image responsive */
-  height: auto;
-}
+.interface-img {  /* Targets elements with class .interface-img */
+  max-width: 100%;            /* Makes the image responsive by limiting width to 100% */
+  height: auto;  /* Maintains the aspect ratio */
+}  /* End of interface-img styling */
 
-.right-side {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.right-side {  /* Targets .right-side specifically */
+  display: flex;  /* Uses flex layout */
+  align-items: center;  /* Vertically centers content */
+  justify-content: center;  /* Horizontally centers content */
+}  /* End of right-side styling */
 
-.paytm-money-info {
-  max-width: 450px;           /* Constrain text content width */
-  text-align: left;
-}
+.paytm-money-info {  /* Targets the Paytm Money information container */
+  max-width: 450px;           /* Constrains text content width */
+  text-align: left;  /* Left aligns text */
+}  /* End of paytm-money-info styling */
 
-.paytm-money-info .logo img {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.paytm-money-info .heading {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.paytm-money-info .description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.paytm-money-info .learn-more-button a {
-  display: inline-block;
-  background-color: #00a950;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.paytm-money-info .learn-more-button a:hover {
-  background-color: #008f3e;
-}
-
-/* FORCE WHITE BACKGROUND FOR LAST SECTION */
-section.py-3 {
-  background-color: #fff !important;
-}
-
-/****************************************************
- * RESPONSIVE MEDIA QUERIES
- ****************************************************/
-
-/* Mobile Devices (max-width: 576px) */
-@media (max-width: 576px) {
-  body {
-    font-size: 12px;
-  }
+.paytm-money-info .logo img {  /* Targets the logo image within .paytm-money-info */
+  max-width: 150px;  /* Limits the maximum width to 150px */
+  height: auto;  /* Maintains aspect ratio */
+  margin-bottom: 20px;  /* Adds bottom margin of 20px */
+}  /* End of logo image styling */
   
-  .page-wrapper {
-    width: 100%;
-    padding: 8px 0;
-  }
+.paytm-money-info .heading {  /* Targets the heading within .paytm-money-info */
+  font-size: 2rem;  /* Sets the font size to 2rem */
+  font-weight: 600;  /* Sets a bold font weight */
+  margin-bottom: 15px;  /* Adds bottom margin of 15px */
+  line-height: 1.2;  /* Sets line height to 1.2 for readability */
+}  /* End of heading styling */
+
+.paytm-money-info .description {  /* Targets the description text within .paytm-money-info */
+  font-size: 1rem;  /* Sets the font size to 1rem */
+  color: #555;  /* Sets text color to a darker gray */
+  margin-bottom: 20px;  /* Adds bottom margin of 20px */
+}  /* End of description styling */
+
+.paytm-money-info .learn-more-button a {  /* Targets the Learn More link within .paytm-money-info */
+  display: inline-block;  /* Displays the link as an inline block */
+  background-color: #00a950;  /* Sets the background color to a green shade */
+  color: #fff;  /* Sets text color to white */
+  padding: 10px 20px;  /* Adds vertical padding of 10px and horizontal padding of 20px */
+  border-radius: 4px;  /* Rounds the corners with a 4px radius */
+  font-weight: 600;  /* Sets the font weight to bold */
+  text-decoration: none;  /* Removes any text decoration */
+  transition: background-color 0.3s ease;  /* Adds a transition effect for background color */
+}  /* End of learn-more-button link styling */
+
+.paytm-money-info .learn-more-button a:hover {  /* Hover state for the Learn More link */
+  background-color: #008f3e;  /* Changes the background color on hover */
+}  /* End of learn-more-button hover styling */
+
+/* FORCE WHITE BACKGROUND FOR LAST SECTION */  /* Comment forcing white background for the last section */
+section.py-3 {  /* Targets <section> elements with class .py-3 */
+  background-color: #fff !important;  /* Forces background color to white using !important */
+}  /* End of section background override */
+
+/****************************************************/  /* Separator comment for responsive media queries */
+/* RESPONSIVE MEDIA QUERIES */  /* Label for responsive media queries section */
+/****************************************************/  /* End separator comment */
+
+/* Mobile Devices (max-width: 576px) */  /* Comment for mobile devices styles */
+@media (max-width: 576px) {  /* Media query for devices with a maximum width of 576px */
+  body {  /* Targets the body element on mobile devices */
+    font-size: 12px;  /* Reduces the base font size to 12px */
+  }  /* End of mobile body styling */
   
-  .navbar-nav .nav-link {
-    font-size: 12px;
-  }
+  .page-wrapper {  /* Targets .page-wrapper on mobile devices */
+    width: 100%;  /* Sets the width to 100% */
+    padding: 8px 0;  /* Reduces vertical padding to 8px */
+  }  /* End of mobile page-wrapper styling */
   
-  .container-2 {
-    flex-direction: column;
-    padding: 1rem;
-  }
+  .navbar-nav .nav-link {  /* Targets navbar links on mobile devices */
+    font-size: 12px;  /* Sets font size to 12px */
+  }  /* End of mobile navbar link styling */
+  
+  .container-2 {  /* Targets .container-2 on mobile devices */
+    flex-direction: column;  /* Changes flex direction to column */
+    padding: 1rem;  /* Reduces padding to 1rem */
+  }  /* End of mobile container-2 styling */
   
   .left-side,
-  .right-side {
-    flex: 1 1 100%;
-    max-width: 100%;
-    padding: 0.5rem;
-  }
+  .right-side {  /* Targets both .left-side and .right-side on mobile devices */
+    flex: 1 1 100%;  /* Makes each side take full width */
+    max-width: 100%;  /* Ensures maximum width is 100% */
+    padding: 0.5rem;  /* Reduces padding to 0.5rem */
+  }  /* End of mobile left-side and right-side styling */
   
-  .paytm-money-info .heading {
-    font-size: 1.5rem;
-  }
+  .paytm-money-info .heading {  /* Targets the heading in .paytm-money-info on mobile */
+    font-size: 1.5rem;  /* Reduces the heading font size to 1.5rem */
+  }  /* End of mobile heading styling */
   
-  .paytm-money-info .description {
-    font-size: 0.9rem;
-  }
+  .paytm-money-info .description {  /* Targets the description in .paytm-money-info on mobile */
+    font-size: 0.9rem;  /* Reduces font size to 0.9rem */
+  }  /* End of mobile description styling */
   
-  .paytm-money-info .learn-more-button a {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-}
+  .paytm-money-info .learn-more-button a {  /* Targets the Learn More link on mobile */
+    padding: 8px 16px;  /* Adjusts padding for mobile devices */
+    font-size: 0.9rem;  /* Reduces font size to 0.9rem */
+  }  /* End of mobile learn-more-button link styling */
+}  /* End of mobile media query block */
 
-/* Tablet Devices (min-width: 577px) and (max-width: 991px) */
-@media (min-width: 577px) and (max-width: 991px) {
-  body {
-    font-size: 13px;
-  }
+/* Tablet Devices (min-width: 577px) and (max-width: 991px) */  /* Comment for tablet device styles */
+@media (min-width: 577px) and (max-width: 991px) {  /* Media query for tablet devices */
+  body {  /* Targets the body element on tablets */
+    font-size: 13px;  /* Sets the base font size to 13px */
+  }  /* End of tablet body styling */
   
-  .page-wrapper {
-    width: 90%;
-    padding: 12px 0;
-  }
+  .page-wrapper {  /* Targets .page-wrapper on tablets */
+    width: 90%;  /* Sets width to 90% */
+    padding: 12px 0;  /* Adjusts vertical padding to 12px */
+  }  /* End of tablet page-wrapper styling */
   
-  .navbar-brand img {
-    max-height: 23px;
-  }
+  .navbar-brand img {  /* Targets navbar logo on tablets */
+    max-height: 23px;  /* Sets maximum height to 23px */
+  }  /* End of tablet navbar-brand logo styling */
   
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
+  .navbar-nav .nav-link {  /* Targets navbar links on tablets */
+    font-size: 14px;  /* Sets font size to 14px */
+  }  /* End of tablet navbar link styling */
   
-  .container-2 {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 1rem;
-  }
+  .container-2 {  /* Targets .container-2 on tablets */
+    flex-direction: row;  /* Ensures flex direction is row */
+    align-items: center;  /* Vertically centers items */
+    justify-content: center;  /* Horizontally centers items */
+    padding: 1.5rem 1rem;  /* Adjusts padding to 1.5rem vertically and 1rem horizontally */
+  }  /* End of tablet container-2 styling */
   
   .left-side,
-  .right-side {
-    flex: 1 1 45%;
-    max-width: 45%;
-    padding: 1rem;
-  }
+  .right-side {  /* Targets .left-side and .right-side on tablets */
+    flex: 1 1 45%;  /* Sets flex basis to roughly 45% for each side */
+    max-width: 45%;  /* Limits maximum width to 45% */
+    padding: 1rem;  /* Adds padding of 1rem */
+  }  /* End of tablet left-side and right-side styling */
   
-  .paytm-money-info .heading {
-    font-size: 1.75rem;
-  }
+  .paytm-money-info .heading {  /* Targets heading in .paytm-money-info on tablets */
+    font-size: 1.75rem;  /* Sets font size to 1.75rem */
+  }  /* End of tablet heading styling */
   
-  .paytm-money-info .description {
-    font-size: 0.95rem;
-  }
-}
+  .paytm-money-info .description {  /* Targets description in .paytm-money-info on tablets */
+    font-size: 0.95rem;  /* Sets font size to 0.95rem */
+  }  /* End of tablet description styling */
+}  /* End of tablet media query block */
 
-/* Desktop Devices (min-width: 992px) */
-@media (min-width: 992px) {
-  body {
-    font-size: 14px;
-  }
+/* Desktop Devices (min-width: 992px) */  /* Comment for desktop device styles */
+@media (min-width: 992px) {  /* Media query for devices with a minimum width of 992px */
+  body {  /* Targets the body element on desktop devices */
+    font-size: 14px;  /* Sets base font size to 14px */
+  }  /* End of desktop body styling */
   
-  .page-wrapper {
-    width: 1160px;
-  }
+  .page-wrapper {  /* Targets .page-wrapper on desktop devices */
+    width: 1160px;  /* Sets a fixed width of 1160px */
+  }  /* End of desktop page-wrapper styling */
   
-  .container-2 {
-    flex-direction: row;
-    padding: 2rem 1rem;
-  }
+  .container-2 {  /* Targets .container-2 on desktop devices */
+    flex-direction: row;  /* Ensures flex direction remains row */
+    padding: 2rem 1rem;  /* Adjusts padding to 2rem vertically and 1rem horizontally */
+  }  /* End of desktop container-2 styling */
   
   .left-side,
-  .right-side {
-    flex: 1 1 500px;
-    max-width: 500px;
-    padding: 1rem;
-  }
+  .right-side {  /* Targets .left-side and .right-side on desktop devices */
+    flex: 1 1 500px;  /* Each side takes roughly 500px width */
+    max-width: 500px;  /* Limits maximum width to 500px */
+    padding: 1rem;  /* Adds padding of 1rem */
+  }  /* End of desktop left-side and right-side styling */
   
-  .paytm-money-info .heading {
-    font-size: 2rem;
-  }
+  .paytm-money-info .heading {  /* Targets the heading in .paytm-money-info on desktop */
+    font-size: 2rem;  /* Sets font size to 2rem */
+  }  /* End of desktop heading styling */
   
-  .paytm-money-info .description {
-    font-size: 1rem;
-  }
-}
+  .paytm-money-info .description {  /* Targets the description in .paytm-money-info on desktop */
+    font-size: 1rem;  /* Sets font size to 1rem */
+  }  /* End of desktop description styling */
+}  /* End of desktop media query block */
